@@ -1,13 +1,13 @@
 # Menu navigation links
 
 - title: Portfolio
-  url: http://127.0.0.1:4000/portfolio.html
+  url: http://decryptmylife.xyz/portfolio.html
 
 - title: Interests
-  url: http://127.0.0.1:4000/interests.html
+  url: http://decryptmylife.xyz/interests.html
 
 - title: Pictures
-  url: http://127.0.0.1:4000/photo-gallery.html
+  url: http://decryptmylife.xyz/photo-gallery.html
   
 - title: Random(ness)
-  url: http://127.0.0.1:4000/randomness.html
+  url: http://decryptmylife.xyz/randomness.html
