@@ -1,0 +1,96 @@
+title:           Just Another Jekyll Blog
+description:      Just Another Jekyll Blog
+disqus_shortname: jajb.disqus.com
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+#url: http://www.jajb.us.s3-website-us-east-1.amazonaws.com/
+url: http://decryptmylife.xyz
+#baseurl: http://www.netcensorship.org
+
+
+# Owner/author information
+
+
+owner:
+  name:           Jay Willey
+  avatar:         avatar.jpg
+  bio:            "Sometimes convential wisdom is just popular stupidity."
+  email:          el337one1@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  github:        jasoncwilley
+  keybase:   starscape
+  stackexchange:
+  linkedin:
+  instagram:   jcdubbau
+  google_plus: +el337one1@gmail.com
+  twitter:  BillyLomax0001
+
+# Background image to be tiled on all pages
+background: cube.png
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      false  # publish future dated posts --  true, false (default)
+highlighter: rouge
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+- photo_gallery
+
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+# Amount of post to show on home page
+paginate: 1
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include:
+  - htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
