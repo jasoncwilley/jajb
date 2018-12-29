@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap v4.0.0 (https://getbootstrap.com)
-  * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * Bootstrap v4.0.0 (httpss://getbootstrap.com)
+  * Copyright 2011-2018 The Bootstrap Authors (httpss://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
@@ -55,7 +55,7 @@ function _inheritsLoose(subClass, superClass) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): util.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -66,7 +66,7 @@ var Util = function ($$$1) {
    * ------------------------------------------------------------------------
    */
   var transition = false;
-  var MAX_UID = 1000000; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
+  var MAX_UID = 1000000; // Shoutout AngusCroll (httpss://goo.gl/pxwQGp)
 
   function toType(obj) {
     return {}.toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
@@ -195,7 +195,7 @@ var Util = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): alert.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -367,7 +367,7 @@ var Alert = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): button.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -530,7 +530,7 @@ var Button = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -1029,7 +1029,7 @@ var Carousel = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): collapse.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -1398,7 +1398,7 @@ var Collapse = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): dropdown.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -1527,10 +1527,10 @@ var Dropdown = function ($$$1) {
       if (!this._inNavbar) {
         /**
          * Check for Popper dependency
-         * Popper - https://popper.js.org
+         * Popper - httpss://popper.js.org
          */
         if (typeof Popper === 'undefined') {
-          throw new TypeError('Bootstrap dropdown require Popper.js (https://popper.js.org)');
+          throw new TypeError('Bootstrap dropdown require Popper.js (httpss://popper.js.org)');
         }
 
         var element = this._element; // For dropup with alignment we use the parent as popper container
@@ -1541,7 +1541,7 @@ var Dropdown = function ($$$1) {
           }
         } // If boundary is not `scrollParent`, then set position to `static`
         // to allow the menu to "escape" the scroll parent's boundaries
-        // https://github.com/twbs/bootstrap/issues/24251
+        // httpss://github.com/twbs/bootstrap/issues/24251
 
 
         if (this._config.boundary !== 'scrollParent') {
@@ -1552,7 +1552,7 @@ var Dropdown = function ($$$1) {
       } // If this is a touch-enabled device we add extra
       // empty mouseover listeners to the body's immediate children;
       // only needed because of broken event delegation on iOS
-      // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
+      // httpss://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
 
       if ('ontouchstart' in document.documentElement && $$$1(parent).closest(Selector.NAVBAR_NAV).length === 0) {
@@ -1863,7 +1863,7 @@ var Dropdown = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): modal.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2439,7 +2439,7 @@ var Modal = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): tooltip.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2536,10 +2536,10 @@ var Tooltip = function ($$$1) {
     function Tooltip(element, config) {
       /**
        * Check for Popper dependency
-       * Popper - https://popper.js.org
+       * Popper - httpss://popper.js.org
        */
       if (typeof Popper === 'undefined') {
-        throw new TypeError('Bootstrap tooltips require Popper.js (https://popper.js.org)');
+        throw new TypeError('Bootstrap tooltips require Popper.js (httpss://popper.js.org)');
       } // private
 
 
@@ -2697,7 +2697,7 @@ var Tooltip = function ($$$1) {
         $$$1(tip).addClass(ClassName.SHOW); // If this is a touch-enabled device we add extra
         // empty mouseover listeners to the body's immediate children;
         // only needed because of broken event delegation on iOS
-        // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
+        // httpss://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
         if ('ontouchstart' in document.documentElement) {
           $$$1('body').children().on('mouseover', null, $$$1.noop);
@@ -3104,7 +3104,7 @@ var Tooltip = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): popover.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3297,7 +3297,7 @@ var Popover = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): scrollspy.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3608,7 +3608,7 @@ var ScrollSpy = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): tab.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3855,7 +3855,7 @@ var Tab = function ($$$1) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.6): index.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (httpss://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
