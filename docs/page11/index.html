@@ -29,14 +29,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Latest Posts">
 <meta property="og:description" content="Describe this nonsense.">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:url" content="http://localhost:4000/page11/">
 <meta property="og:site_name" content="Just Another Jekyll Blog">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/page11/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -161,72 +161,76 @@
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2018-03-02T00:00:00-05:00"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch">March 02, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Jay Willey">Jay Willey</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2013-05-22T00:00:00-04:00"><a href="http://localhost:4000/sample-post-images">May 22, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Jay Willey">Jay Willey</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         
-Reading time ~2 minutesReading time ~2 minutes
+Reading time ~1 minuteReading time ~1 minute
 
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch.html" rel="bookmark" title="How to install virtualenv on ArchLinux" itemprop="url">How to install virtualenv on ArchLinux</a></h1>
+      <h1 class="entry-title"><a href="http://localhost:4000/sample-post-images.html" rel="bookmark" title="A Post with Images" itemprop="url">A Post with Images</a></h1>
     
   </header>
   <div class="entry-content">
-    <p>##Python and ArchLinux</p>
+    <p>Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use <code class="highlighter-rouge">figure</code> with the appropriate <code class="highlighter-rouge">class</code>. Each instance of <code class="highlighter-rouge">figure</code> is auto-numbered and displayed in the caption.</p>
 
-<p>ArchLinux may not be the most user friendly Linux OS and in my opinion that is by design.  Simply installing ArchLinux is a feat for the novice linux user.  Once installed users must configure the system and I’d be willing to bet that the majority of those new to Arch never make it through the configuration phase post install.  Over the years I have played around with Archlinux and after spending hours digging through the docs, Archwiki, and watching countless Youtube videos a lightbulb went off and all the puzzle pieces began to fit together.  If you have not had a chance to check out my ArchLinux install tutorial please take a minute to check it out.</p>
+<h2 id="figures-for-images-or-video">Figures (for images or video)</h2>
 
-<p>ArchLinux is unique in the way it handles Python and comes with Python3.6 pre-installed.  To check and make sure your system has a working version of Python open up a termnal window and type python then hit return.  If you have Python installed you will see somehting like the following.</p>
+<h3 id="one-up">One Up</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ python
-Python 3.6.4 (default, Jan  5 2018, 02:35:40)
-[GCC 7.2.1 20171224] on linux
-Type "help", "copyright", "credits" or "license" for more information.
-&gt;&gt;&gt;
-</code></pre></div></div>
-<p>As you can see the results show that my system has python3.6 installed as the default version.</p>
+<figure>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt="" /></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+</figure>
 
-<p>This is all fine and dandy if I am working on coding projects that use only Python3, but what if I would like to code a project or load a project that requires Python2 dependencies.</p>
+<h3 id="two-up">Two Up</h3>
 
-<p>Here is where virutalenv comes into play.  Virtualenv solves this problem marvelously.  It is a sandbox that allows you to manage your project’s library in whichever versionof Python you chose.</p>
+<p>Apply the <code class="highlighter-rouge">half</code> class like so to display two images side by side that share the same caption.</p>
 
-<p>Before we install virutalenv let’s make sure we have all the software we will need to complete this tutorial and install virtualenv.</p>
-
-<p>##Dependencies Needed to Complete this Tutorial</p>
-
-<ul>
-  <li>sudo</li>
-  <li>python-setuptools</li>
-  <li>pyton-pip</li>
-  <li>python2 (If you don’t have both Python2 installed see my post on installing it before you proceed)</li>
-</ul>
-
-<p>Most of you probably have already installed and configured sudo.  Sudo can be installed via the pacman command and the configuration file can be found here /etc/sudoers.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@minty minty]# pacman -S sudo
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"half"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-1.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-2.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing these two images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
 </code></pre></div></div>
 
-<p>Note:  You must be the root user to install sudo via pacman</p>
+<p>And you’ll get something that looks like this:</p>
 
-<p>Once you have sudo installed and added your username to the sudoers configuration file you can now use sudo to invoke root privilages.</p>
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<img src="http://placehold.it/600x300.jpg" alt="" />
+	<img src="http://placehold.it/600x300.jpg" alt="" />
+	<figcaption>Two images.</figcaption>
+</figure>
 
-<p>Now let’s move on and install both the setuptools and pip using the sudo command.</p>
+<h3 id="three-up">Three Up</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ sudo pacman -S python-setuptools python-pip
+<p>Apply the <code class="highlighter-rouge">third</code> class like so to display three images side by side that share the same caption.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"third"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing these three images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
 </code></pre></div></div>
 
-<p>If all goes well and you do not recieve any errors you should have everything you need to install Virtualenv</p>
+<p>And you’ll get something that looks like this:</p>
 
-<p>##Installing Virtualenv via pip</p>
-
-<p>Installing virtualenv is quite easy using pip and can be accomplished by simply entering the following command into the terminal.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ sudo pip install virtualenv
-</code></pre></div></div>
+<figure class="third">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<figcaption>Three images.</figcaption>
+</figure>
 
 <div id="disqus_thread"></div>
 <script>
@@ -250,6 +254,43 @@ s.setAttribute('data-timestamp', +new Date());
 
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
+<h3 id="alternative-way">Alternative way</h3>
+
+<p>Another way to achieve the same result is to include <code class="highlighter-rouge">gallery</code> Liquid template. In this case you
+don’t have to write any HTML tags – just copy a small block of code, adjust the parameters (see below)
+and fill the block with any number of links to images. You can mix relative and external links.</p>
+
+<p>Here is the block you might want to use:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">images</span><span class="w"> </span><span class="p">%}</span>
+	/images/abstract-10.jpg
+	/images/abstract-11.jpg
+	http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
+<span class="p">{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">gallery</span><span class="w"> </span><span class="na">images</span><span class="o">=</span><span class="nv">images</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Test images"</span><span class="w"> </span><span class="na">cols</span><span class="o">=</span><span class="mi">3</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Parameters:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">caption</code>: Sets the caption under the gallery (see <code class="highlighter-rouge">figcaption</code> HTML tag above);</li>
+  <li><code class="highlighter-rouge">cols</code>: Sets the number of columns of the gallery.
+Available values: [1..3].</li>
+</ul>
+
+<p>It will look something like this:</p>
+
+<figure class="third">
+    
+    <a href="/images/abstract-10.jpg"><img src="/images/abstract-10.jpg" alt="" /></a>
+    
+    <a href="/images/abstract-11.jpg"><img src="/images/abstract-11.jpg" alt="" /></a>
+    
+    <a href="http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png"><img src="http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png" alt="" /></a>
+    
+    <figcaption>Test images</figcaption>
+</figure>
+
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
@@ -260,38 +301,55 @@ s.setAttribute('data-timestamp', +new Date());
   <ul class="inline-list">
     
     
-
-    
-    
-      <li><strong class="current-page">1</strong></li>
-    
-
-    
-    
-
-    
-    
-    
-
-    
       
-        
-        
-        
-        <li><a href="http://localhost:4000/page2/">2</a></li>
-      
-    
-      
-        
-        
-        
-        <li><a href="http://localhost:4000/page3/">3</a></li>
+        <li><a href="http://localhost:4000/page10/" class="btn">Previous</a></li>
       
     
 
     
     
+      <li><a href="http://localhost:4000">1</a></li>
+    
+
+    
+    
+      
+      
       <li>…</li>
+    
+
+    
+    
+    
+
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page9/">9</a></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page10/">10</a></li>
+      
+    
+      
+        <li><strong class="current-page">11</strong></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page12/">12</a></li>
+      
+    
+
+    
     
 
     
@@ -300,7 +358,7 @@ s.setAttribute('data-timestamp', +new Date());
 
     
     
-      <li><a href="http://localhost:4000/page2/" class="btn">Next</a></li>
+      <li><a href="http://localhost:4000/page12/" class="btn">Next</a></li>
     
   </ul>
 </div>

@@ -29,14 +29,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Latest Posts">
 <meta property="og:description" content="Describe this nonsense.">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:url" content="http://localhost:4000/page5/">
 <meta property="og:site_name" content="Just Another Jekyll Blog">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/page5/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -161,72 +161,131 @@
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2018-03-02T00:00:00-05:00"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch">March 02, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Jay Willey">Jay Willey</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2016-10-25T00:00:00-04:00"><a href="http://localhost:4000/jekyll_install-post">October 25, 2016</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Jay Willey">Jay Willey</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         
-Reading time ~2 minutesReading time ~2 minutes
+Reading time ~3 minutesReading time ~3 minutes
 
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch.html" rel="bookmark" title="How to install virtualenv on ArchLinux" itemprop="url">How to install virtualenv on ArchLinux</a></h1>
+      <h1 class="entry-title"><a href="http://localhost:4000/jekyll_install-post.html" rel="bookmark" title="Installing Jekyll" itemprop="url">Installing Jekyll</a></h1>
     
   </header>
   <div class="entry-content">
-    <p>##Python and ArchLinux</p>
+    <h2 id="installing-jekyll-30">Installing Jekyll 3.0+</h2>
 
-<p>ArchLinux may not be the most user friendly Linux OS and in my opinion that is by design.  Simply installing ArchLinux is a feat for the novice linux user.  Once installed users must configure the system and I’d be willing to bet that the majority of those new to Arch never make it through the configuration phase post install.  Over the years I have played around with Archlinux and after spending hours digging through the docs, Archwiki, and watching countless Youtube videos a lightbulb went off and all the puzzle pieces began to fit together.  If you have not had a chance to check out my ArchLinux install tutorial please take a minute to check it out.</p>
+<p>Over the past few months I have spent countless hours scouring the web for tutorials that will help solidify my web develoment skills. The internet offers many free tutorials on just about every topic you can think.  After a few hours of searching and start or restarting variuos tutorials I figured out that not all web tutorials are created equal.  In light of this I thought I’d take the time to create a few up to date (As of 10/15/2016) tutorials that may help other web development students steer clear of google rabbit holes and stackoverflow loops.</p>
 
-<p>ArchLinux is unique in the way it handles Python and comes with Python3.6 pre-installed.  To check and make sure your system has a working version of Python open up a termnal window and type python then hit return.  If you have Python installed you will see somehting like the following.</p>
+<p>Before I start (and before you comment) I’d like to say that like anything else in life there are many ways to reach any desired end and that I am going to focus on what worked for me. If you choose to provide constructive criticism please take the time to explain why your way worked better for you so we all can learn.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ python
-Python 3.6.4 (default, Jan  5 2018, 02:35:40)
-[GCC 7.2.1 20171224] on linux
-Type "help", "copyright", "credits" or "license" for more information.
-&gt;&gt;&gt;
-</code></pre></div></div>
-<p>As you can see the results show that my system has python3.6 installed as the default version.</p>
+<p>OK, let’s get started.</p>
 
-<p>This is all fine and dandy if I am working on coding projects that use only Python3, but what if I would like to code a project or load a project that requires Python2 dependencies.</p>
+<h2 id="jekyll-dependencies">Jekyll Dependencies</h2>
 
-<p>Here is where virutalenv comes into play.  Virtualenv solves this problem marvelously.  It is a sandbox that allows you to manage your project’s library in whichever versionof Python you chose.</p>
-
-<p>Before we install virutalenv let’s make sure we have all the software we will need to complete this tutorial and install virtualenv.</p>
-
-<p>##Dependencies Needed to Complete this Tutorial</p>
+<p>If you wanna create a simplistic but powerful blog like this one the first thing you are are going to have to do is make sure you have the tools to do the job.</p>
 
 <ul>
-  <li>sudo</li>
-  <li>python-setuptools</li>
-  <li>pyton-pip</li>
-  <li>python2 (If you don’t have both Python2 installed see my post on installing it before you proceed)</li>
+  <li>Ruby (including development headers, v1.9.3+ for Jekyll 2 and v2+ for Jekyll 3)</li>
+  <li>RubyGems</li>
+  <li>NodeJS</li>
+  <li>Python 2.7 (for Jekyll 2 and earlier) or Python 3+ for Jekyll 3+)</li>
 </ul>
 
-<p>Most of you probably have already installed and configured sudo.  Sudo can be installed via the pacman command and the configuration file can be found here /etc/sudoers.</p>
+<p>First you will need to check and see if you have Ruby installed. Open your terminal and run.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@minty minty]# pacman -S sudo
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>userone@laptop:~/Desktop/$ ruby -v
+ruby 2.3.0p0 (2015-12-25) [x86_64-linux]
+
+</code></pre></div></div>
+<p>If it returns something simular then you are all good and can proceed to the next dependency. If you need to install ruby and want to install version 2.3.1 enter the following commands into the terminal</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev.
+
+cd
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
+
+echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' &gt;&gt; ~/.bashrc
+
+exec $SHELL
+
+rbenv install 2.3.1
+
+rbenv global 2.3.1
+
+ruby -v
 </code></pre></div></div>
 
-<p>Note:  You must be the root user to install sudo via pacman</p>
+<p>The last step is to install the gems bundler.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+If all went well you should have both ruby and rubygems installed. Next check and see if you have Nodejs installed
 
-<p>Once you have sudo installed and added your username to the sudoers configuration file you can now use sudo to invoke root privilages.</p>
+</code></pre></div></div>
+<p>userone@laptop:~/Desktop/$ nodejs –version
+v6.9.2</p>
 
-<p>Now let’s move on and install both the setuptools and pip using the sudo command.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If it returns something like ruby 4.6.1 then you are all good and can proceed to the next dependency on the list. If you need to install nodejs 4.6.1 enter the following commands into the terminal.
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ sudo pacman -S python-setuptools python-pip
+</code></pre></div></div>
+<p>sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+nodejs -v</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Now run the following command to make sure it installed correctly.
+
+</code></pre></div></div>
+<p>userone@laptop:~/Desktop/$ nodejs –version
+v6.9.2</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If it returns the version you installed move on to last dependency.
+
+The final dependecy is Python and since it comes pre-installed on all Ubuntu 14.04 systems. Check and make sure your have a working version by running the following command.
+
+</code></pre></div></div>
+<p>userone@laptop:~/Desktop$ python
+Python 3.4.3 (default, Nov 17 2016, 01:08:31)
+[GCC 4.8.4] on linux
+Type “help”, “copyright”, “credits” or “license” for more information.</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+
+      <p>```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>You should have all the dependencies installed and be able to install Jekyll without any errors.</p>
+
+<h2 id="install-jekyll">Install Jekyll</h2>
+
+<p>Simply run the following command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>userone@laptop:~/Desktop$ gem install bundler jekyll
 </code></pre></div></div>
 
-<p>If all goes well and you do not recieve any errors you should have everything you need to install Virtualenv</p>
+<p>Now that Jekyll is installed you can start a new project by running the following command.</p>
 
-<p>##Installing Virtualenv via pip</p>
-
-<p>Installing virtualenv is quite easy using pip and can be accomplished by simply entering the following command into the terminal.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ sudo pip install virtualenv
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>userone@laptop:~/Desktop$ jekyll new "name of your project without "" "
+userone@laptop:~/Desktop$ cd "name of project"
+userone@laptop:~/Desktop$ bundle exec jekyll serve
 </code></pre></div></div>
+
+<p>Now head over to <a href="http://jekyllrb.com/docs/installation/">Jekyll’s Documentation page</a> and familiarize yourself with the program. This will be the starting point in the next entry of this the tutorial. Thanks again for following along and if you have questions or comments feel free to leave a comment.</p>
 
 <div id="disqus_thread"></div>
 <script>
@@ -260,32 +319,58 @@ s.setAttribute('data-timestamp', +new Date());
   <ul class="inline-list">
     
     
-
-    
-    
-      <li><strong class="current-page">1</strong></li>
-    
-
-    
+      
+        <li><a href="http://localhost:4000/page4/" class="btn">Previous</a></li>
+      
     
 
     
     
+      <li><a href="http://localhost:4000">1</a></li>
     
 
+    
     
       
-        
-        
-        
-        <li><a href="http://localhost:4000/page2/">2</a></li>
       
+      <li>…</li>
+    
+
+    
+    
+    
+
     
       
         
         
         
         <li><a href="http://localhost:4000/page3/">3</a></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page4/">4</a></li>
+      
+    
+      
+        <li><strong class="current-page">5</strong></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page6/">6</a></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page7/">7</a></li>
       
     
 
@@ -300,7 +385,7 @@ s.setAttribute('data-timestamp', +new Date());
 
     
     
-      <li><a href="http://localhost:4000/page2/" class="btn">Next</a></li>
+      <li><a href="http://localhost:4000/page6/" class="btn">Next</a></li>
     
   </ul>
 </div>
