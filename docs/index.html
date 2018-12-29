@@ -3,549 +3,16 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<style type=css/text href='assets/css/main.css'></style>
-<style type=css/text href='assets/css/photogallery.css'></style>
-<style type=css/text href='assets/css/aboutme.css'></style>
-<script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
 <head>
-	<style>
-
-	body {
-	  font-family: 'Lato', arial, sans-serif;
-	  color: #434343;
-	  background: #DAE3E7;
-	  font-size: 16px;
-	  -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-	  font-family: 'Montserrat', sans-serif;
-	  font-weight: 700;
-	  color: #778492;
-	}
-	a {
-	  color: #3AAA64;
-	  -webkit-transition: all 0.4s ease-in-out;
-	  -moz-transition: all 0.4s ease-in-out;
-	  -ms-transition: all 0.4s ease-in-out;
-	  -o-transition: all 0.4s ease-in-out;
-	}
-	a:hover {
-	  text-decoration: underline;
-	  color: #5f6b77;
-	  color: #2d844e;
-	}
-	a:focus {
-	  text-decoration: none;
-	}
-	.btn,
-	a.btn {
-	  -webkit-transition: all 0.4s ease-in-out;
-	  -moz-transition: all 0.4s ease-in-out;
-	  -ms-transition: all 0.4s ease-in-out;
-	  -o-transition: all 0.4s ease-in-out;
-	  font-family: 'Montserrat', arial, sans-serif;
-	  padding: 8px 16px;
-	  font-weight: bold;
-	}
-	.btn .fa,
-	a.btn .fa {
-	  margin-right: 5px;
-	}
-	.btn:focus,
-	a.btn:focus {
-	  color: #fff;
-	}
-	a.btn-cta-primary,
-	.btn-cta-primary {
-	  background: #54ba4e;
-	  border: 1px solid #54ba4e;
-	  color: #fff;
-	  font-weight: 600;
-	  text-transform: uppercase;
-	}
-	a.btn-cta-primary:hover,
-	.btn-cta-primary:hover {
-	  background: #49ac43;
-	  border: 1px solid #49ac43;
-	  color: #fff;
-	}
-	a.btn-cta-secondary,
-	.btn-cta-secondary {
-	  background: #479FC8;
-	  border: 1px solid #479FC8;
-	  color: #fff;
-	  font-weight: 600;
-	  text-transform: uppercase;
-	}
-	a.btn-cta-secondary:hover,
-	.btn-cta-secondary:hover {
-	  background: #3893bd;
-	  border: 1px solid #3893bd;
-	  color: #fff;
-	}
-	.text-highlight {
-	  color: #32383e;
-	}
-	.label-theme {
-	  background: #3AAA64;
-	  font-size: 12px;
-	}
-	a.dotted-link {
-	  border-bottom: 1px dotted #778492;
-	  color: #778492;
-	}
-	a.dotted-link:hover {
-	  text-decoration: none;
-	  color: #49515a;
-	}
-	/*
-	iframe {
-	    .header {
-	        padding: 0;
-	    }
-	}
-	.iframe-wrapper {
-	    overflow: auto;
-	    -webkit-overflow-scrolling:touch;
-	}
-	*/
-	/* ======= Header ======= */
-	.header {
-	  padding: 30px 0;
-	  background: #f5f5f5;
-	  border-top: 10px solid #778492;
-	  padding-right:375px;
-
-	}
-	.headerimg {
-	  padding-left: 160px !important;
-	  margin-left: 150px !important;
-	  margin-right: 150px !important;
-	}
-	.headertext {
-	  padding-right: 250px;
-	  padding-right:500px;
-	  text-align: right;
-
-	}
-
-	.header .btn {
-	  margin-top: 60px;
-	  font-weight: bold;
-	}
-	.header .profile-image {
-
-	  background-color: black;
-	}
-	.header .profile-content .name {
-	  color: #49515a;
-	  font-size: 30px;
-	  margin-bottom: 5px;
-	  margin-top: 30px;
-	}
-	.header .profile-content .desc {
-	  color: #778492;
-	  font-family: "Lato", arial, sans-serif;
-	  font-weight: 400;
-	  font-size: 24px;
-	  margin-top: 0;
-	  margin-bottom: 15px;
-	  }
-	.header .profile-content .social a {
-	  background: #b0b7bf;
-	  width: 36px;
-	  height: 36px;
-	  display: inline-block;
-	  -webkit-border-radius: 50%;
-	  -moz-border-radius: 50%;
-	  -ms-border-radius: 50%;
-	  -o-border-radius: 50%;
-	  border-radius: 50%;
-	  -moz-background-clip: padding;
-	  -webkit-background-clip: padding-box;
-	  background-clip: padding-box;
-	  color: #fff;
-	  text-align: center;
-	}
-	.header .profile-content .social a:hover {
-	  background: #778492;
-	}
-	.header .profile-content .social a .fa {
-	  font-size: 20px;
-	  padding-top: 8px;
-	}
-	/* ======= Sections======= */
-	.sections-wrapper {
-	  padding-top: 60px;
-	  padding-bottom: 60px;
-	}
-	.section {
-	  margin-bottom: 30px;
-	}
-	.section .section-inner {
-	  background: #fff;
-	  padding: 30px;
-	}
-	.section .heading {
-	  margin-top: 0;
-	  margin-bottom: 23px;
-	  color: #545e69;
-	  font-size: 35px;
-	}
-	.section .content .more-link .fa {
-	  margin-right: 5px;
-	  font-size: 14px;
-	  padding:30px;
-	}
-	/* About Section */
-	/* Latest Section */
-	.latest .item {
-	  margin-bottom: 30px;
-	}
-	.latest .item .title {
-	  font-size: 22px;
-	  margin-top: 0;
-	}
-	.latest .item .title .label {
-	  margin-left: 5px;
-	  font-size: 12px;
-	}
-	.latest .item .title a {
-	  color: #778492;
-	}
-	.latest .item .title a:hover {
-	  color: #5f6b77;
-	}
-	.latest .item .project-image:hover {
-	  -webkit-opacity: 0.8;
-	  -moz-opacity: 0.8;
-	  opacity: 0.8;
-	}
-	.divider {
-	    padding: 0;
-	    border: none;
-	    border-top: medium double #333;
-	    color:  #778492;
-	    text-align: center;
-	}
-	.divider:after {
-	    content: "§";
-	    display: inline-block;
-	    position: relative;
-	    top: -0.7em;
-	    font-size: 1.5em;
-	    padding: 0 0.25em;
-	    background: white;
-	}
-	.latest .featured {
-	  margin-bottom: 60px;
-	}
-	.latest .featured .title {
-	  margin-bottom: 5px;
-	  font-size: 20px;
-	}
-	.latest .featured .summary {
-	  margin-bottom: 30px;
-	  color: #778492;
-	}
-	.latest .featured img {
-	  margin-bottom: 30px;
-	}
-	.latest .featured .desc {
-	  margin-bottom: 30px;
-	}
-	.latest .featured-image {
-	  position: relative;
-	}
-	.latest .featured-image .text {
-	  background: #3AAA64;
-	  color: #fff;
-	}
-	.latest .featured-image .ribbon {
-	  position: absolute;
-	  top: -4px;
-	  right: -4px;
-	  width: 110px;
-	  height: 110px;
-	  overflow: hidden;
-	}
-	.latest .featured-image .ribbon .text {
-	  font-family: 'Montserrat', sans-serif;
-	  position: relative;
-	  left: -8px;
-	  top: 18px;
-	  width: 158px;
-	  padding: 10px 10px;
-	  font-size: 15px;
-	  font-weight: bold;
-	  text-align: center;
-	  text-transform: uppercase;
-	  color: #fff;
-	  background-color: #479FC8;
-	  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
-	  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
-	  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
-	  -o-transform: rotate(45deg) translate3d(0, 0, 0);
-	}
-	.latest .featured-image .ribbon .text:before,
-	.latest .featured-image .ribbon .text:after {
-	  content: '';
-	  position: absolute;
-	  bottom: -5px;
-	  border-top: 5px solid #276582;
-	  border-left: 5px solid transparent;
-	  border-right: 5px solid transparent;
-	}
-	.latest .featured-image .ribbon .text:before {
-	  left: 0;
-	}
-	.latest .featured-image .ribbon .text:after {
-	  right: 0;
-	}
-
-	/* Work Section */
-	.experience .item {
-	  margin-bottom: 30px;
-
-	}
-	.experience .item .title {
-	  font-size: 16px;
-	  margin-top: 0;
-	  margin-bottom: 5px;
-	  line-height: 1.5;
-	  margin-right: 30px;
-	}
-	.experience .item .title .place {
-	  color: #999;
-	  font-weight: normal;
-	}
-	.experience .item .title .place a {
-	  color: #999;
-	}
-	.experience .item .title .place a:hover {
-	  color: #666666;
-	}
-	.experience .item .title .year {
-	  color: #999;
-	  font-weight: normal;
-	}
-	/* Git section */
-	.github-graph {
-	  margin-bottom: 30px;
-	}
-	.github-graph .js-calendar-graph-svg {
-	  max-width: 100%;
-	}
-	.ghfeed {
-	  height: 600px;
-	}
-	.ghfeed,
-	.ghfeed *,
-	.ghfeed *:before,
-	.ghfeed *:after {
-	  -webkit-box-sizing: content-box;
-	  -moz-box-sizing: content-box;
-	  box-sizing: content-box;
-	}
-	/* Info Section */
-	.info .fa {
-	  margin-right: 15px;
-	  color: #ccd1d6;
-	}
-	.info .fa.fa-envelope-o {
-	  font-size: 14px;
-	}
-	.info ul {
-	  margin-bottom: 0;
-	}
-	.info li {
-	  margin-bottom: 15px;
-	}
-	.info li:last-child {
-	  margin-bottom: 0;
-	}
-	/* Skills Section */
-	.skills .title {
-	  padding-top: 15px;
-	  padding-bottom: 15px;
-	}
-	.skills .intro {
-	  margin-bottom: 30px;
-	}
-	.skills .skillset .item {
-	  margin-bottom: 30px;
-	}
-	.skills .skillset .level-title {
-	  font-size: 16px;
-	  position: relative;
-	  margin-top: 0;
-	  margin-bottom: 10px;
-	}
-	.skills .skillset .level-title .level-label {
-	  color: #ccd1d6;
-	  font-size: 14px;
-	  font-weight: 400;
-	  font-family: "Lato", arial, sans-serif;
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	}
-	.skills .skillset .level-bar {
-	  height: 15px;
-	  background: #e8e8e8;
-	}
-	.skills .skillset .level-bar-inner {
-	  height: 15px;
-	  background: #66cb8c;
-	}
-
-	/* Education section */
-	.education .item {
-	  margin-bottom: 30px;
-	}
-	.education .item:last-child {
-	  margin-bottom: 0;
-	}
-	.education .item .title {
-	  font-size: 16px;
-	  margin-top: 0;
-	}
-	.education .item .university {
-	  font-family: "Lato", arial, sans-serif;
-	  font-size: 13px;
-	  color: #999;
-	  font-weight: 600;
-	  padding-left: 25px;
-	}
-	.education .item .university .year {
-	  color: #b0b7bf;
-	  font-weight: 500;
-	}
-	/* Language Section */
-	.languages .item {
-	  margin-bottom: 15px;
-	}
-	.languages .item .title {
-	  color: #778492;
-	}
-	.languages .item .level {
-	  color: #999;
-	}
-	.languages .item:last-child {
-	  margin-bottom: 0;
-	}
-	.languages .item .fa {
-	  color: #79d19a;
-	}
-	/* Blog Section */
-	.blog .item {
-	  margin-bottom: 30px;
-	}
-	.blog .item .title {
-	  font-size: 18px;
-	  line-height: 1.3;
-	}
-	.blog .item .title a {
-	  color: #778492;
-	}
-	.blog .item .title a:hover {
-	  color: #5f6b77;
-	}
-	.blog .item:last-child {
-	  margin-bottom: 0;
-	}
-	/* List section */
-	.list ul li {
-	  margin-bottom: 10px;
-	}
-	.list ul li .fa {
-	  margin-right: 5px;
-	}
-	.list ul li a {
-	  color: #778492;
-	}
-	.list ul li a:hover {
-	  color: #49515a;
-	}
-
-	/* ======= Footer ======= */
-	.footer {
-	  background: #32383e;
-	  color: #fff;
-	  padding: 10px 0;
-	}
-	.footer .copyright {
-	  line-height: 1.6;
-	  color: #a1aab4;
-	  font-size: 14px;
-	}
-	.footer a {
-	  color: #fff;
-	}
-	.footer .fa-heart {
-	  color: #fb866a;
-	}
-	/* Extra small devices (phones, less than 768px) */
-	@media (max-width: 767px) {
-	  .header {
-	    text-align: center;
-	  }
-	  .header .profile-image {
-	    float: none !important;
-	    margin: 30px auto;
-	  }
-	  .header .profile-content {
-	    float: none !important;
-	    text-align: center;
-	  }
-	  .header .btn {
-	    margin-top: 30px;
-	    float: none !important;
-	  }
-	  .project-image {
-	    margin-bottom: 15px;
-	  }
-	}
-	/* Small devices (tablets, 768px and up) */
-	/* Medium devices (desktops, 992px and up) */
-	/* Large devices (large desktops, 1200px and up) */
-	/* Ex-Large devices (large desktops, 1200px and up) */
-	@media (min-width: 1400px) {
-	  .container {
-	    width: 1360px;
-	  }
-	}
-	.photo-gallery, .photo-gallery li {
-		list-style: none;
-		padding: 0;
-	}
-
-	.photo-gallery li {
-		display: inline-block;
-		width: 33%;
-	}
-
-	.photo-gallery li img {
-		width: 100%;
-	}
-	</style>
 <meta charset="utf-8">
-<title>Latest Posts &#8211; Just Another Jekyll Blog</title>
+<title>Latest Posts &#8211;noscript </title>
+
 <meta name="description" content="Describe this nonsense.">
 <meta name="keywords" content="Jekyll, theme, themes, responsive, blog, modern">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:4000/images/abstract-10.jpg">
+<meta name="twitter:image" content="http://www.jasoncwilley.github.io/jajb//images/abstract-10.jpg">
 
 <meta name="twitter:title" content="Latest Posts">
 <meta name="twitter:description" content="Describe this nonsense.">
@@ -556,15 +23,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Latest Posts">
 <meta property="og:description" content="Describe this nonsense.">
-<meta property="og:url" content="http://localhost:4000/">
-<meta property="og:site_name" content="Just Another Jekyll Blog">
+<meta property="og:url" content="http://www.jasoncwilley.github.io/jajb//">
+<meta property="og:site_name" content="">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed">
+<link rel="canonical" href="http://www.jasoncwilley.github.io/jajb//">
+<link href="http://www.jasoncwilley.github.io/jajb//feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -572,33 +39,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://www.jasoncwilley.github.io/jajb//assets/css/main.css">
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
 <meta http-equiv="cleartype" content="on">
 
 <!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="http://www.jasoncwilley.github.io/jajb//assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<link rel="shortcut icon" href="http://www.jasoncwilley.github.io/jajb//favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<link rel="shortcut icon" href="http://www.jasoncwilley.github.io/jajb//favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://www.jasoncwilley.github.io/jajb//images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.jasoncwilley.github.io/jajb//images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.jasoncwilley.github.io/jajb//images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.jasoncwilley.github.io/jajb//images/apple-touch-icon-144x144-precomposed.png">
 
 
 
 
-<style type="text/css">body {background-image:url(http://localhost:4000/images/d50b0862.png);}</style>
+<style type="text/css">body {background-image:url(http://www.jasoncwilley.github.io/jajb//images/d50b0862.png);}</style>
 
 
 </head>
@@ -614,7 +81,7 @@
 			<a href="#">About</a>
 			<ul class="dl-submenu">
 				<li>
-					<img src="http://localhost:4000/images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
+					<img src="http://www.jasoncwilley.github.io/jajb//images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
 					<h4>Jay Willey</h4>
 					<p>Sometimes convential wisdom is just popular stupidity.</p>
 				</li>
@@ -646,22 +113,22 @@
 		<li>
 			<a href="#">Posts</a>
 			<ul class="dl-submenu">
-				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
-				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
+				<li><a href="http://www.jasoncwilley.github.io/jajb//posts/">All Posts</a></li>
+				<li><a href="http://www.jasoncwilley.github.io/jajb//tags/">All Tags</a></li>
 			</ul>
 	
 		
 	    
-	    <li><a href="https://jasoncwilley.github.io/jajb/portfolio.html" target="_blank">Portfolio</a></li>
+	    <li><a href="http://decryptmylife.xyz/portfolio.html" target="_blank">Portfolio</a></li>
 	  
 	    
-	    <li><a href="https://jasoncwilley.github.io/jajb/interests.html" target="_blank">Interests</a></li>
+	    <li><a href="http://decryptmylife.xyz/interests.html" target="_blank">Interests</a></li>
 	  
 	    
-	    <li><a href="https://jasoncwilley.github.io/jajb/photo-gallery.html" target="_blank">Pictures</a></li>
+	    <li><a href="http://decryptmylife.xyz/photo-gallery.html" target="_blank">Pictures</a></li>
 	  
 	    
-	    <li><a href="https://jasoncwilley.github.io/jajb/randomness.html" target="_blank">Random(ness)</a></li>
+	    <li><a href="http://decryptmylife.xyz/randomness.html" target="_blank">Random(ness)</a></li>
 	  
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
@@ -671,12 +138,12 @@
   
   
     <div class="entry-image">
-      <img src="http://localhost:4000/images/abstract-10.jpg" alt="Latest Posts">
+      <img src="http://www.jasoncwilley.github.io/jajb//images/abstract-10.jpg" alt="Latest Posts">
     </div><!-- /.entry-image -->
   
   <div class="header-title">
     <div class="header-title-wrap">
-      <h1>Just Another Jekyll Blog</h1>
+      <h1></h1>
       <h2>Latest Posts</h2>
     </div><!-- /.header-title-wrap -->
   </div><!-- /.header-title -->
@@ -688,95 +155,22 @@
   <header>
     
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2018-03-02T00:00:00-05:00"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch">March 02, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Jay Willey">Jay Willey</a></span></span>
+      <span class="entry-date date published updated"><time datetime="2018-05-22T00:00:00-04:00"><a href="http://www.jasoncwilley.github.io/jajb//Bootstrap-Photo-Gallery-Variations">May 22, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://www.jasoncwilley.github.io/jajb//about/" title="About Jay Willey">Jay Willey</a></span></span>
       
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         
-Reading time ~2 minutesReading time ~2 minutes
+Reading time ~1 minuteReading time ~1 minute
 
       </span><!-- /.entry-reading-time -->
       
     </div><!-- /.entry-meta -->
     
-      <h1 class="entry-title"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch.html" rel="bookmark" title="How to install virtualenv on ArchLinux" itemprop="url">How to install virtualenv on ArchLinux</a></h1>
+      <h1 class="entry-title"><a href="http://www.jasoncwilley.github.io/jajb//Bootstrap-Photo-Gallery-Variations.html" rel="bookmark" title="bootstrap-photogalleries" itemprop="url">bootstrap-photogalleries</a></h1>
     
   </header>
   <div class="entry-content">
-    <p>##Python and ArchLinux</p>
-
-<p>ArchLinux may not be the most user friendly Linux OS and in my opinion that is by design.  Simply installing ArchLinux is a feat for the novice linux user.  Once installed users must configure the system and I’d be willing to bet that the majority of those new to Arch never make it through the configuration phase post install.  Over the years I have played around with Archlinux and after spending hours digging through the docs, Archwiki, and watching countless Youtube videos a lightbulb went off and all the puzzle pieces began to fit together.  If you have not had a chance to check out my ArchLinux install tutorial please take a minute to check it out.</p>
-
-<p>ArchLinux is unique in the way it handles Python and comes with Python3.6 pre-installed.  To check and make sure your system has a working version of Python open up a termnal window and type python then hit return.  If you have Python installed you will see somehting like the following.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ python
-Python 3.6.4 (default, Jan  5 2018, 02:35:40)
-[GCC 7.2.1 20171224] on linux
-Type "help", "copyright", "credits" or "license" for more information.
-&gt;&gt;&gt;
-</code></pre></div></div>
-<p>As you can see the results show that my system has python3.6 installed as the default version.</p>
-
-<p>This is all fine and dandy if I am working on coding projects that use only Python3, but what if I would like to code a project or load a project that requires Python2 dependencies.</p>
-
-<p>Here is where virutalenv comes into play.  Virtualenv solves this problem marvelously.  It is a sandbox that allows you to manage your project’s library in whichever versionof Python you chose.</p>
-
-<p>Before we install virutalenv let’s make sure we have all the software we will need to complete this tutorial and install virtualenv.</p>
-
-<p>##Dependencies Needed to Complete this Tutorial</p>
-
-<ul>
-  <li>sudo</li>
-  <li>python-setuptools</li>
-  <li>pyton-pip</li>
-  <li>python2 (If you don’t have both Python2 installed see my post on installing it before you proceed)</li>
-</ul>
-
-<p>Most of you probably have already installed and configured sudo.  Sudo can be installed via the pacman command and the configuration file can be found here /etc/sudoers.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@minty minty]# pacman -S sudo
-</code></pre></div></div>
-
-<p>Note:  You must be the root user to install sudo via pacman</p>
-
-<p>Once you have sudo installed and added your username to the sudoers configuration file you can now use sudo to invoke root privilages.</p>
-
-<p>Now let’s move on and install both the setuptools and pip using the sudo command.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ sudo pacman -S python-setuptools python-pip
-</code></pre></div></div>
-
-<p>If all goes well and you do not recieve any errors you should have everything you need to install Virtualenv</p>
-
-<p>##Installing Virtualenv via pip</p>
-
-<p>Installing virtualenv is quite easy using pip and can be accomplished by simply entering the following command into the terminal.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[minty@minty ~]$ sudo pip install virtualenv
-</code></pre></div></div>
-
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//jajb.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+    
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
@@ -805,14 +199,14 @@ s.setAttribute('data-timestamp', +new Date());
         
         
         
-        <li><a href="http://localhost:4000/page2/">2</a></li>
+        <li><a href="http://www.jasoncwilley.github.io/jajb//page2/">2</a></li>
       
     
       
         
         
         
-        <li><a href="http://localhost:4000/page3/">3</a></li>
+        <li><a href="http://www.jasoncwilley.github.io/jajb//page3/">3</a></li>
       
     
 
@@ -822,12 +216,12 @@ s.setAttribute('data-timestamp', +new Date());
     
 
     
-      <li><a href="http://localhost:4000/page13/">13</a></li>
+      <li><a href="http://www.jasoncwilley.github.io/jajb//page14/">14</a></li>
     
 
     
     
-      <li><a href="http://localhost:4000/page2/" class="btn">Next</a></li>
+      <li><a href="http://www.jasoncwilley.github.io/jajb//page2/" class="btn">Next</a></li>
     
   </ul>
 </div>
@@ -842,20 +236,12 @@ s.setAttribute('data-timestamp', +new Date());
 </div><!-- /.footer-wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://www.jasoncwilley.github.io/jajb//assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://www.jasoncwilley.github.io/jajb//assets/js/scripts.min.js"></script>
 
 
 
-
+          
 
 </body>
-<script src="/assets/js/scripts.min.js"></script>
-<script src="/assets/js/respond.js"></script>
-<script src="/assets/js/plugins/jquery.dlmenu.js"></script>
-<script src="/assets/js/plugins/jquery.fitvids.js"></script>
-<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-<script src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
-
-
 </html>
