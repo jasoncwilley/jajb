@@ -48,8 +48,6 @@ Once the theme finishes downloading you need to extract it into the you want to 
 unzip ~/Desktop/hpstr-jekyll-theme-master/
 ```
 
-If you did everything correctly you should now have a copy of Neo-HPSTR on in a folder called hpstr-jekyll-theme-master on your desktop.  The next section of the tutorial deals with configuring theme.  if you have not already installed jekyll and it's dependencies please do that before preceeding. Link to [Jekyll Install Tutorial]( http://localhost:4000/neo-hipster-theme-configuration-post/)
-
 
 ## Basic Setup and Configuration
 
