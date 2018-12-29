@@ -3,16 +3,549 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<style type=css/text href='assets/css/main.css'></style>
+<style type=css/text href='assets/css/photogallery.css'></style>
+<style type=css/text href='assets/css/aboutme.css'></style>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
 <head>
-<meta charset="utf-8">
-<title>All Posts &#8211;noscript </title>
+	<style>
 
+	body {
+	  font-family: 'Lato', arial, sans-serif;
+	  color: #434343;
+	  background: #DAE3E7;
+	  font-size: 16px;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 700;
+	  color: #778492;
+	}
+	a {
+	  color: #3AAA64;
+	  -webkit-transition: all 0.4s ease-in-out;
+	  -moz-transition: all 0.4s ease-in-out;
+	  -ms-transition: all 0.4s ease-in-out;
+	  -o-transition: all 0.4s ease-in-out;
+	}
+	a:hover {
+	  text-decoration: underline;
+	  color: #5f6b77;
+	  color: #2d844e;
+	}
+	a:focus {
+	  text-decoration: none;
+	}
+	.btn,
+	a.btn {
+	  -webkit-transition: all 0.4s ease-in-out;
+	  -moz-transition: all 0.4s ease-in-out;
+	  -ms-transition: all 0.4s ease-in-out;
+	  -o-transition: all 0.4s ease-in-out;
+	  font-family: 'Montserrat', arial, sans-serif;
+	  padding: 8px 16px;
+	  font-weight: bold;
+	}
+	.btn .fa,
+	a.btn .fa {
+	  margin-right: 5px;
+	}
+	.btn:focus,
+	a.btn:focus {
+	  color: #fff;
+	}
+	a.btn-cta-primary,
+	.btn-cta-primary {
+	  background: #54ba4e;
+	  border: 1px solid #54ba4e;
+	  color: #fff;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	}
+	a.btn-cta-primary:hover,
+	.btn-cta-primary:hover {
+	  background: #49ac43;
+	  border: 1px solid #49ac43;
+	  color: #fff;
+	}
+	a.btn-cta-secondary,
+	.btn-cta-secondary {
+	  background: #479FC8;
+	  border: 1px solid #479FC8;
+	  color: #fff;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	}
+	a.btn-cta-secondary:hover,
+	.btn-cta-secondary:hover {
+	  background: #3893bd;
+	  border: 1px solid #3893bd;
+	  color: #fff;
+	}
+	.text-highlight {
+	  color: #32383e;
+	}
+	.label-theme {
+	  background: #3AAA64;
+	  font-size: 12px;
+	}
+	a.dotted-link {
+	  border-bottom: 1px dotted #778492;
+	  color: #778492;
+	}
+	a.dotted-link:hover {
+	  text-decoration: none;
+	  color: #49515a;
+	}
+	/*
+	iframe {
+	    .header {
+	        padding: 0;
+	    }
+	}
+	.iframe-wrapper {
+	    overflow: auto;
+	    -webkit-overflow-scrolling:touch;
+	}
+	*/
+	/* ======= Header ======= */
+	.header {
+	  padding: 30px 0;
+	  background: #f5f5f5;
+	  border-top: 10px solid #778492;
+	  padding-right:375px;
+
+	}
+	.headerimg {
+	  padding-left: 160px !important;
+	  margin-left: 150px !important;
+	  margin-right: 150px !important;
+	}
+	.headertext {
+	  padding-right: 250px;
+	  padding-right:500px;
+	  text-align: right;
+
+	}
+
+	.header .btn {
+	  margin-top: 60px;
+	  font-weight: bold;
+	}
+	.header .profile-image {
+
+	  background-color: black;
+	}
+	.header .profile-content .name {
+	  color: #49515a;
+	  font-size: 30px;
+	  margin-bottom: 5px;
+	  margin-top: 30px;
+	}
+	.header .profile-content .desc {
+	  color: #778492;
+	  font-family: "Lato", arial, sans-serif;
+	  font-weight: 400;
+	  font-size: 24px;
+	  margin-top: 0;
+	  margin-bottom: 15px;
+	  }
+	.header .profile-content .social a {
+	  background: #b0b7bf;
+	  width: 36px;
+	  height: 36px;
+	  display: inline-block;
+	  -webkit-border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  -ms-border-radius: 50%;
+	  -o-border-radius: 50%;
+	  border-radius: 50%;
+	  -moz-background-clip: padding;
+	  -webkit-background-clip: padding-box;
+	  background-clip: padding-box;
+	  color: #fff;
+	  text-align: center;
+	}
+	.header .profile-content .social a:hover {
+	  background: #778492;
+	}
+	.header .profile-content .social a .fa {
+	  font-size: 20px;
+	  padding-top: 8px;
+	}
+	/* ======= Sections======= */
+	.sections-wrapper {
+	  padding-top: 60px;
+	  padding-bottom: 60px;
+	}
+	.section {
+	  margin-bottom: 30px;
+	}
+	.section .section-inner {
+	  background: #fff;
+	  padding: 30px;
+	}
+	.section .heading {
+	  margin-top: 0;
+	  margin-bottom: 23px;
+	  color: #545e69;
+	  font-size: 35px;
+	}
+	.section .content .more-link .fa {
+	  margin-right: 5px;
+	  font-size: 14px;
+	  padding:30px;
+	}
+	/* About Section */
+	/* Latest Section */
+	.latest .item {
+	  margin-bottom: 30px;
+	}
+	.latest .item .title {
+	  font-size: 22px;
+	  margin-top: 0;
+	}
+	.latest .item .title .label {
+	  margin-left: 5px;
+	  font-size: 12px;
+	}
+	.latest .item .title a {
+	  color: #778492;
+	}
+	.latest .item .title a:hover {
+	  color: #5f6b77;
+	}
+	.latest .item .project-image:hover {
+	  -webkit-opacity: 0.8;
+	  -moz-opacity: 0.8;
+	  opacity: 0.8;
+	}
+	.divider {
+	    padding: 0;
+	    border: none;
+	    border-top: medium double #333;
+	    color:  #778492;
+	    text-align: center;
+	}
+	.divider:after {
+	    content: "§";
+	    display: inline-block;
+	    position: relative;
+	    top: -0.7em;
+	    font-size: 1.5em;
+	    padding: 0 0.25em;
+	    background: white;
+	}
+	.latest .featured {
+	  margin-bottom: 60px;
+	}
+	.latest .featured .title {
+	  margin-bottom: 5px;
+	  font-size: 20px;
+	}
+	.latest .featured .summary {
+	  margin-bottom: 30px;
+	  color: #778492;
+	}
+	.latest .featured img {
+	  margin-bottom: 30px;
+	}
+	.latest .featured .desc {
+	  margin-bottom: 30px;
+	}
+	.latest .featured-image {
+	  position: relative;
+	}
+	.latest .featured-image .text {
+	  background: #3AAA64;
+	  color: #fff;
+	}
+	.latest .featured-image .ribbon {
+	  position: absolute;
+	  top: -4px;
+	  right: -4px;
+	  width: 110px;
+	  height: 110px;
+	  overflow: hidden;
+	}
+	.latest .featured-image .ribbon .text {
+	  font-family: 'Montserrat', sans-serif;
+	  position: relative;
+	  left: -8px;
+	  top: 18px;
+	  width: 158px;
+	  padding: 10px 10px;
+	  font-size: 15px;
+	  font-weight: bold;
+	  text-align: center;
+	  text-transform: uppercase;
+	  color: #fff;
+	  background-color: #479FC8;
+	  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+	  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+	  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+	  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+	}
+	.latest .featured-image .ribbon .text:before,
+	.latest .featured-image .ribbon .text:after {
+	  content: '';
+	  position: absolute;
+	  bottom: -5px;
+	  border-top: 5px solid #276582;
+	  border-left: 5px solid transparent;
+	  border-right: 5px solid transparent;
+	}
+	.latest .featured-image .ribbon .text:before {
+	  left: 0;
+	}
+	.latest .featured-image .ribbon .text:after {
+	  right: 0;
+	}
+
+	/* Work Section */
+	.experience .item {
+	  margin-bottom: 30px;
+
+	}
+	.experience .item .title {
+	  font-size: 16px;
+	  margin-top: 0;
+	  margin-bottom: 5px;
+	  line-height: 1.5;
+	  margin-right: 30px;
+	}
+	.experience .item .title .place {
+	  color: #999;
+	  font-weight: normal;
+	}
+	.experience .item .title .place a {
+	  color: #999;
+	}
+	.experience .item .title .place a:hover {
+	  color: #666666;
+	}
+	.experience .item .title .year {
+	  color: #999;
+	  font-weight: normal;
+	}
+	/* Git section */
+	.github-graph {
+	  margin-bottom: 30px;
+	}
+	.github-graph .js-calendar-graph-svg {
+	  max-width: 100%;
+	}
+	.ghfeed {
+	  height: 600px;
+	}
+	.ghfeed,
+	.ghfeed *,
+	.ghfeed *:before,
+	.ghfeed *:after {
+	  -webkit-box-sizing: content-box;
+	  -moz-box-sizing: content-box;
+	  box-sizing: content-box;
+	}
+	/* Info Section */
+	.info .fa {
+	  margin-right: 15px;
+	  color: #ccd1d6;
+	}
+	.info .fa.fa-envelope-o {
+	  font-size: 14px;
+	}
+	.info ul {
+	  margin-bottom: 0;
+	}
+	.info li {
+	  margin-bottom: 15px;
+	}
+	.info li:last-child {
+	  margin-bottom: 0;
+	}
+	/* Skills Section */
+	.skills .title {
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	}
+	.skills .intro {
+	  margin-bottom: 30px;
+	}
+	.skills .skillset .item {
+	  margin-bottom: 30px;
+	}
+	.skills .skillset .level-title {
+	  font-size: 16px;
+	  position: relative;
+	  margin-top: 0;
+	  margin-bottom: 10px;
+	}
+	.skills .skillset .level-title .level-label {
+	  color: #ccd1d6;
+	  font-size: 14px;
+	  font-weight: 400;
+	  font-family: "Lato", arial, sans-serif;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.skills .skillset .level-bar {
+	  height: 15px;
+	  background: #e8e8e8;
+	}
+	.skills .skillset .level-bar-inner {
+	  height: 15px;
+	  background: #66cb8c;
+	}
+
+	/* Education section */
+	.education .item {
+	  margin-bottom: 30px;
+	}
+	.education .item:last-child {
+	  margin-bottom: 0;
+	}
+	.education .item .title {
+	  font-size: 16px;
+	  margin-top: 0;
+	}
+	.education .item .university {
+	  font-family: "Lato", arial, sans-serif;
+	  font-size: 13px;
+	  color: #999;
+	  font-weight: 600;
+	  padding-left: 25px;
+	}
+	.education .item .university .year {
+	  color: #b0b7bf;
+	  font-weight: 500;
+	}
+	/* Language Section */
+	.languages .item {
+	  margin-bottom: 15px;
+	}
+	.languages .item .title {
+	  color: #778492;
+	}
+	.languages .item .level {
+	  color: #999;
+	}
+	.languages .item:last-child {
+	  margin-bottom: 0;
+	}
+	.languages .item .fa {
+	  color: #79d19a;
+	}
+	/* Blog Section */
+	.blog .item {
+	  margin-bottom: 30px;
+	}
+	.blog .item .title {
+	  font-size: 18px;
+	  line-height: 1.3;
+	}
+	.blog .item .title a {
+	  color: #778492;
+	}
+	.blog .item .title a:hover {
+	  color: #5f6b77;
+	}
+	.blog .item:last-child {
+	  margin-bottom: 0;
+	}
+	/* List section */
+	.list ul li {
+	  margin-bottom: 10px;
+	}
+	.list ul li .fa {
+	  margin-right: 5px;
+	}
+	.list ul li a {
+	  color: #778492;
+	}
+	.list ul li a:hover {
+	  color: #49515a;
+	}
+
+	/* ======= Footer ======= */
+	.footer {
+	  background: #32383e;
+	  color: #fff;
+	  padding: 10px 0;
+	}
+	.footer .copyright {
+	  line-height: 1.6;
+	  color: #a1aab4;
+	  font-size: 14px;
+	}
+	.footer a {
+	  color: #fff;
+	}
+	.footer .fa-heart {
+	  color: #fb866a;
+	}
+	/* Extra small devices (phones, less than 768px) */
+	@media (max-width: 767px) {
+	  .header {
+	    text-align: center;
+	  }
+	  .header .profile-image {
+	    float: none !important;
+	    margin: 30px auto;
+	  }
+	  .header .profile-content {
+	    float: none !important;
+	    text-align: center;
+	  }
+	  .header .btn {
+	    margin-top: 30px;
+	    float: none !important;
+	  }
+	  .project-image {
+	    margin-bottom: 15px;
+	  }
+	}
+	/* Small devices (tablets, 768px and up) */
+	/* Medium devices (desktops, 992px and up) */
+	/* Large devices (large desktops, 1200px and up) */
+	/* Ex-Large devices (large desktops, 1200px and up) */
+	@media (min-width: 1400px) {
+	  .container {
+	    width: 1360px;
+	  }
+	}
+	.photo-gallery, .photo-gallery li {
+		list-style: none;
+		padding: 0;
+	}
+
+	.photo-gallery li {
+		display: inline-block;
+		width: 33%;
+	}
+
+	.photo-gallery li img {
+		width: 100%;
+	}
+	</style>
+<meta charset="utf-8">
+<title>All Posts &#8211; Just Another Jekyll Blog</title>
 <meta name="description" content="An archive of posts.">
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.jasoncwilley.github.io/jajb/images/abstract-10.jpg">
+<meta name="twitter:image" content="http://localhost:4000/images/abstract-10.jpg">
 
 <meta name="twitter:title" content="All Posts">
 <meta name="twitter:description" content="An archive of posts.">
@@ -23,69 +556,69 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="All Posts">
 <meta property="og:description" content="An archive of posts.">
-<meta property="og:url" content="https://www.jasoncwilley.github.io/jajb/posts/">
-<meta property="og:site_name" content="">
+<meta property="og:url" content="http://localhost:4000/posts/">
+<meta property="og:site_name" content="Just Another Jekyll Blog">
 
 
 
 
 
-<link rel="canonical" href="https://www.jasoncwilley.github.io/jajb/posts/">
-<link href="https://www.jasoncwilley.github.io/jajb/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+<link rel="canonical" href="http://localhost:4000/posts/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed">
 
-<!-- https://t.co/dKP3o1e -->
+<!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://www.jasoncwilley.github.io/jajb/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
-<meta https-equiv="cleartype" content="on">
+<meta http-equiv="cleartype" content="on">
 
 <!-- Load Modernizr -->
-<script src="https://www.jasoncwilley.github.io/jajb/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="https://www.jasoncwilley.github.io/jajb/favicon.ico">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="https://www.jasoncwilley.github.io/jajb/favicon.png">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 
 
 
 
-<style type="text/css">body {background-image:url(https://www.jasoncwilley.github.io/jajb/images/cube.png);}</style>
+<style type="text/css">body {background-image:url(http://localhost:4000/images/cube.png);}</style>
 
 
 </head>
 
 <body id="post-index" class="feature">
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="https://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
 	<ul class="dl-menu">
-		<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></a>
+		<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></a>
 		<li>
 			<a href="#">About</a>
 			<ul class="dl-submenu">
 				<li>
-					<img src="https://www.jasoncwilley.github.io/jajb/images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
+					<img src="http://localhost:4000/images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
 					<h4>Jay Willey</h4>
 					<p>Sometimes convential wisdom is just popular stupidity.</p>
 				</li>
-				<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></li>
+				<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></li>
 				<li>
 					<a href="mailto:el337one1@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
 				</li>
@@ -113,8 +646,8 @@
 		<li>
 			<a href="#">Posts</a>
 			<ul class="dl-submenu">
-				<li><a href="https://www.jasoncwilley.github.io/jajb/posts/">All Posts</a></li>
-				<li><a href="https://www.jasoncwilley.github.io/jajb/tags/">All Tags</a></li>
+				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
+				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
 			</ul>
 	
 		
@@ -138,12 +671,12 @@
   
   
     <div class="entry-image">
-      <img src="https://www.jasoncwilley.github.io/jajb/images/abstract-10.jpg" alt="All Posts">
+      <img src="http://localhost:4000/images/abstract-10.jpg" alt="All Posts">
     </div><!-- /.entry-image -->
   
   <div class="header-title">
     <div class="header-title-wrap">
-      <h1></h1>
+      <h1>Just Another Jekyll Blog</h1>
       <h2>All Posts</h2>
     </div><!-- /.header-title-wrap -->
   </div><!-- /.header-title -->
@@ -160,7 +693,7 @@
       <ul>
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations.html" title="bootstrap-photogalleries">bootstrap-photogalleries</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/how-to-install-virtualenv-on-arch.html" title="How to install virtualenv on ArchLinux">How to install virtualenv on ArchLinux</a></li>
 
     
         
@@ -171,7 +704,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch.html" title="How to install virtualenv on ArchLinux">How to install virtualenv on ArchLinux</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/uploaded-some-pics.html" title="Some Pics From My Travels">Some Pics From My Travels</a></li>
 
     
         
@@ -182,18 +715,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/uploaded-some-pics.html" title="Some Pics From My Travels">Some Pics From My Travels</a></li>
-
-    
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/conky-install-and-config-post.html" title="Conky Setup">Conky Setup</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/conky-install-and-config-post.html" title="Conky Setup">Conky Setup</a></li>
 
     
         
@@ -210,7 +732,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post.html" title="Neo-HPSTR Theme Configuration">Neo-HPSTR Theme Configuration</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/neo-hipster-theme-configuration-post.html" title="Neo-HPSTR Theme Configuration">Neo-HPSTR Theme Configuration</a></li>
 
     
         
@@ -221,7 +743,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/jekyll_install-post.html" title="Installing Jekyll">Installing Jekyll</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/jekyll_install-post.html" title="Installing Jekyll">Installing Jekyll</a></li>
 
     
         
@@ -238,7 +760,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/background-image.html" title="Post with a Background Image">Post with a Background Image</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/background-image.html" title="Post with a Background Image">Post with a Background Image</a></li>
 
     
         
@@ -249,7 +771,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/code-highlighting-post.html" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/code-highlighting-post.html" title="Syntax Highlighting Post">Syntax Highlighting Post</a></li>
 
     
         
@@ -260,7 +782,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/sample-link-post.html" title="Sample Link Post">Sample Link Post</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/sample-link-post.html" title="Sample Link Post">Sample Link Post</a></li>
 
     
         
@@ -271,7 +793,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/video-post.html" title="A Post with a Video">A Post with a Video</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/video-post.html" title="A Post with a Video">A Post with a Video</a></li>
 
     
         
@@ -282,7 +804,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/readability-feature-post.html" title="Post with Large Feature Image and Text">Post with Large Feature Image and Text</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/readability-feature-post.html" title="Post with Large Feature Image and Text">Post with Large Feature Image and Text</a></li>
 
     
         
@@ -293,7 +815,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/sample-post-images.html" title="A Post with Images">A Post with Images</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/sample-post-images.html" title="A Post with Images">A Post with Images</a></li>
 
     
         
@@ -310,7 +832,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/readability-post.html" title="Testing Readability with a Bunch of Text">Testing Readability with a Bunch of Text</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/readability-post.html" title="Testing Readability with a Bunch of Text">Testing Readability with a Bunch of Text</a></li>
 
     
         
@@ -327,7 +849,7 @@
 
     
 
-        <li class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/sample-post.html" title="Sample Post">Sample Post</a></li>
+        <li class="entry-title"><a href="http://localhost:4000/sample-post.html" title="Sample Post">Sample Post</a></li>
 
     
       </ul>
@@ -339,17 +861,25 @@
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <span>&copy; 2018 Jay Willey. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+    <span>&copy; 2018 Jay Willey. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
   </footer>
 </div><!-- /.footer-wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://www.jasoncwilley.github.io/jajb/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="https://www.jasoncwilley.github.io/jajb/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
 
 
 
-          
+
 
 </body>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/respond.js"></script>
+<script src="/assets/js/plugins/jquery.dlmenu.js"></script>
+<script src="/assets/js/plugins/jquery.fitvids.js"></script>
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+
+
 </html>

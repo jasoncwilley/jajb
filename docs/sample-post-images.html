@@ -3,16 +3,550 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<style type=css/text href='assets/css/main.css'></style>
+<style type=css/text href='assets/css/photogallery.css'></style>
+<style type=css/text href='assets/css/aboutme.css'></style>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+				<style>
+
+				body {
+				  font-family: 'Lato', arial, sans-serif;
+				  color: #434343;
+				  background: #DAE3E7;
+				  font-size: 16px;
+				  -webkit-font-smoothing: antialiased;
+				  -moz-osx-font-smoothing: grayscale;
+				}
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+				  font-family: 'Montserrat', sans-serif;
+				  font-weight: 700;
+				  color: #778492;
+				}
+				a {
+				  color: #3AAA64;
+				  -webkit-transition: all 0.4s ease-in-out;
+				  -moz-transition: all 0.4s ease-in-out;
+				  -ms-transition: all 0.4s ease-in-out;
+				  -o-transition: all 0.4s ease-in-out;
+				}
+				a:hover {
+				  text-decoration: underline;
+				  color: #5f6b77;
+				  color: #2d844e;
+				}
+				a:focus {
+				  text-decoration: none;
+				}
+				.btn,
+				a.btn {
+				  -webkit-transition: all 0.4s ease-in-out;
+				  -moz-transition: all 0.4s ease-in-out;
+				  -ms-transition: all 0.4s ease-in-out;
+				  -o-transition: all 0.4s ease-in-out;
+				  font-family: 'Montserrat', arial, sans-serif;
+				  padding: 8px 16px;
+				  font-weight: bold;
+				}
+				.btn .fa,
+				a.btn .fa {
+				  margin-right: 5px;
+				}
+				.btn:focus,
+				a.btn:focus {
+				  color: #fff;
+				}
+				a.btn-cta-primary,
+				.btn-cta-primary {
+				  background: #54ba4e;
+				  border: 1px solid #54ba4e;
+				  color: #fff;
+				  font-weight: 600;
+				  text-transform: uppercase;
+				}
+				a.btn-cta-primary:hover,
+				.btn-cta-primary:hover {
+				  background: #49ac43;
+				  border: 1px solid #49ac43;
+				  color: #fff;
+				}
+				a.btn-cta-secondary,
+				.btn-cta-secondary {
+				  background: #479FC8;
+				  border: 1px solid #479FC8;
+				  color: #fff;
+				  font-weight: 600;
+				  text-transform: uppercase;
+				}
+				a.btn-cta-secondary:hover,
+				.btn-cta-secondary:hover {
+				  background: #3893bd;
+				  border: 1px solid #3893bd;
+				  color: #fff;
+				}
+				.text-highlight {
+				  color: #32383e;
+				}
+				.label-theme {
+				  background: #3AAA64;
+				  font-size: 12px;
+				}
+				a.dotted-link {
+				  border-bottom: 1px dotted #778492;
+				  color: #778492;
+				}
+				a.dotted-link:hover {
+				  text-decoration: none;
+				  color: #49515a;
+				}
+				/*
+				iframe {
+				    .header {
+				        padding: 0;
+				    }
+				}
+				.iframe-wrapper {
+				    overflow: auto;
+				    -webkit-overflow-scrolling:touch;
+				}
+				*/
+				/* ======= Header ======= */
+				.header {
+				  padding: 30px 0;
+				  background: #f5f5f5;
+				  border-top: 10px solid #778492;
+				  padding-right:375px;
+
+				}
+				.headerimg {
+				  padding-left: 160px !important;
+				  margin-left: 150px !important;
+				  margin-right: 150px !important;
+				}
+				.headertext {
+				  padding-right: 250px;
+				  padding-right:500px;
+				  text-align: right;
+
+				}
+
+				.header .btn {
+				  margin-top: 60px;
+				  font-weight: bold;
+				}
+				.header .profile-image {
+
+				  background-color: black;
+				}
+				.header .profile-content .name {
+				  color: #49515a;
+				  font-size: 30px;
+				  margin-bottom: 5px;
+				  margin-top: 30px;
+				}
+				.header .profile-content .desc {
+				  color: #778492;
+				  font-family: "Lato", arial, sans-serif;
+				  font-weight: 400;
+				  font-size: 24px;
+				  margin-top: 0;
+				  margin-bottom: 15px;
+				  }
+				.header .profile-content .social a {
+				  background: #b0b7bf;
+				  width: 36px;
+				  height: 36px;
+				  display: inline-block;
+				  -webkit-border-radius: 50%;
+				  -moz-border-radius: 50%;
+				  -ms-border-radius: 50%;
+				  -o-border-radius: 50%;
+				  border-radius: 50%;
+				  -moz-background-clip: padding;
+				  -webkit-background-clip: padding-box;
+				  background-clip: padding-box;
+				  color: #fff;
+				  text-align: center;
+				}
+				.header .profile-content .social a:hover {
+				  background: #778492;
+				}
+				.header .profile-content .social a .fa {
+				  font-size: 20px;
+				  padding-top: 8px;
+				}
+				/* ======= Sections======= */
+				.sections-wrapper {
+				  padding-top: 60px;
+				  padding-bottom: 60px;
+				}
+				.section {
+				  margin-bottom: 30px;
+				}
+				.section .section-inner {
+				  background: #fff;
+				  padding: 30px;
+				}
+				.section .heading {
+				  margin-top: 0;
+				  margin-bottom: 23px;
+				  color: #545e69;
+				  font-size: 35px;
+				}
+				.section .content .more-link .fa {
+				  margin-right: 5px;
+				  font-size: 14px;
+				  padding:30px;
+				}
+				/* About Section */
+				/* Latest Section */
+				.latest .item {
+				  margin-bottom: 30px;
+				}
+				.latest .item .title {
+				  font-size: 22px;
+				  margin-top: 0;
+				}
+				.latest .item .title .label {
+				  margin-left: 5px;
+				  font-size: 12px;
+				}
+				.latest .item .title a {
+				  color: #778492;
+				}
+				.latest .item .title a:hover {
+				  color: #5f6b77;
+				}
+				.latest .item .project-image:hover {
+				  -webkit-opacity: 0.8;
+				  -moz-opacity: 0.8;
+				  opacity: 0.8;
+				}
+				.divider {
+				    padding: 0;
+				    border: none;
+				    border-top: medium double #333;
+				    color:  #778492;
+				    text-align: center;
+				}
+				.divider:after {
+				    content: "§";
+				    display: inline-block;
+				    position: relative;
+				    top: -0.7em;
+				    font-size: 1.5em;
+				    padding: 0 0.25em;
+				    background: white;
+				}
+				.latest .featured {
+				  margin-bottom: 60px;
+				}
+				.latest .featured .title {
+				  margin-bottom: 5px;
+				  font-size: 20px;
+				}
+				.latest .featured .summary {
+				  margin-bottom: 30px;
+				  color: #778492;
+				}
+				.latest .featured img {
+				  margin-bottom: 30px;
+				}
+				.latest .featured .desc {
+				  margin-bottom: 30px;
+				}
+				.latest .featured-image {
+				  position: relative;
+				}
+				.latest .featured-image .text {
+				  background: #3AAA64;
+				  color: #fff;
+				}
+				.latest .featured-image .ribbon {
+				  position: absolute;
+				  top: -4px;
+				  right: -4px;
+				  width: 110px;
+				  height: 110px;
+				  overflow: hidden;
+				}
+				.latest .featured-image .ribbon .text {
+				  font-family: 'Montserrat', sans-serif;
+				  position: relative;
+				  left: -8px;
+				  top: 18px;
+				  width: 158px;
+				  padding: 10px 10px;
+				  font-size: 15px;
+				  font-weight: bold;
+				  text-align: center;
+				  text-transform: uppercase;
+				  color: #fff;
+				  background-color: #479FC8;
+				  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+				  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+				  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+				  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+				}
+				.latest .featured-image .ribbon .text:before,
+				.latest .featured-image .ribbon .text:after {
+				  content: '';
+				  position: absolute;
+				  bottom: -5px;
+				  border-top: 5px solid #276582;
+				  border-left: 5px solid transparent;
+				  border-right: 5px solid transparent;
+				}
+				.latest .featured-image .ribbon .text:before {
+				  left: 0;
+				}
+				.latest .featured-image .ribbon .text:after {
+				  right: 0;
+				}
+
+				/* Work Section */
+				.experience .item {
+				  margin-bottom: 30px;
+
+				}
+				.experience .item .title {
+				  font-size: 16px;
+				  margin-top: 0;
+				  margin-bottom: 5px;
+				  line-height: 1.5;
+				  margin-right: 30px;
+				}
+				.experience .item .title .place {
+				  color: #999;
+				  font-weight: normal;
+				}
+				.experience .item .title .place a {
+				  color: #999;
+				}
+				.experience .item .title .place a:hover {
+				  color: #666666;
+				}
+				.experience .item .title .year {
+				  color: #999;
+				  font-weight: normal;
+				}
+				/* Git section */
+				.github-graph {
+				  margin-bottom: 30px;
+				}
+				.github-graph .js-calendar-graph-svg {
+				  max-width: 100%;
+				}
+				.ghfeed {
+				  height: 600px;
+				}
+				.ghfeed,
+				.ghfeed *,
+				.ghfeed *:before,
+				.ghfeed *:after {
+				  -webkit-box-sizing: content-box;
+				  -moz-box-sizing: content-box;
+				  box-sizing: content-box;
+				}
+				/* Info Section */
+				.info .fa {
+				  margin-right: 15px;
+				  color: #ccd1d6;
+				}
+				.info .fa.fa-envelope-o {
+				  font-size: 14px;
+				}
+				.info ul {
+				  margin-bottom: 0;
+				}
+				.info li {
+				  margin-bottom: 15px;
+				}
+				.info li:last-child {
+				  margin-bottom: 0;
+				}
+				/* Skills Section */
+				.skills .title {
+				  padding-top: 15px;
+				  padding-bottom: 15px;
+				}
+				.skills .intro {
+				  margin-bottom: 30px;
+				}
+				.skills .skillset .item {
+				  margin-bottom: 30px;
+				}
+				.skills .skillset .level-title {
+				  font-size: 16px;
+				  position: relative;
+				  margin-top: 0;
+				  margin-bottom: 10px;
+				}
+				.skills .skillset .level-title .level-label {
+				  color: #ccd1d6;
+				  font-size: 14px;
+				  font-weight: 400;
+				  font-family: "Lato", arial, sans-serif;
+				  position: absolute;
+				  right: 0;
+				  top: 0;
+				}
+				.skills .skillset .level-bar {
+				  height: 15px;
+				  background: #e8e8e8;
+				}
+				.skills .skillset .level-bar-inner {
+				  height: 15px;
+				  background: #66cb8c;
+				}
+
+				/* Education section */
+				.education .item {
+				  margin-bottom: 30px;
+				}
+				.education .item:last-child {
+				  margin-bottom: 0;
+				}
+				.education .item .title {
+				  font-size: 16px;
+				  margin-top: 0;
+				}
+				.education .item .university {
+				  font-family: "Lato", arial, sans-serif;
+				  font-size: 13px;
+				  color: #999;
+				  font-weight: 600;
+				  padding-left: 25px;
+				}
+				.education .item .university .year {
+				  color: #b0b7bf;
+				  font-weight: 500;
+				}
+				/* Language Section */
+				.languages .item {
+				  margin-bottom: 15px;
+				}
+				.languages .item .title {
+				  color: #778492;
+				}
+				.languages .item .level {
+				  color: #999;
+				}
+				.languages .item:last-child {
+				  margin-bottom: 0;
+				}
+				.languages .item .fa {
+				  color: #79d19a;
+				}
+				/* Blog Section */
+				.blog .item {
+				  margin-bottom: 30px;
+				}
+				.blog .item .title {
+				  font-size: 18px;
+				  line-height: 1.3;
+				}
+				.blog .item .title a {
+				  color: #778492;
+				}
+				.blog .item .title a:hover {
+				  color: #5f6b77;
+				}
+				.blog .item:last-child {
+				  margin-bottom: 0;
+				}
+				/* List section */
+				.list ul li {
+				  margin-bottom: 10px;
+				}
+				.list ul li .fa {
+				  margin-right: 5px;
+				}
+				.list ul li a {
+				  color: #778492;
+				}
+				.list ul li a:hover {
+				  color: #49515a;
+				}
+
+				/* ======= Footer ======= */
+				.footer {
+				  background: #32383e;
+				  color: #fff;
+				  padding: 10px 0;
+				}
+				.footer .copyright {
+				  line-height: 1.6;
+				  color: #a1aab4;
+				  font-size: 14px;
+				}
+				.footer a {
+				  color: #fff;
+				}
+				.footer .fa-heart {
+				  color: #fb866a;
+				}
+				/* Extra small devices (phones, less than 768px) */
+				@media (max-width: 767px) {
+				  .header {
+				    text-align: center;
+				  }
+				  .header .profile-image {
+				    float: none !important;
+				    margin: 30px auto;
+				  }
+				  .header .profile-content {
+				    float: none !important;
+				    text-align: center;
+				  }
+				  .header .btn {
+				    margin-top: 30px;
+				    float: none !important;
+				  }
+				  .project-image {
+				    margin-bottom: 15px;
+				  }
+				}
+				/* Small devices (tablets, 768px and up) */
+				/* Medium devices (desktops, 992px and up) */
+				/* Large devices (large desktops, 1200px and up) */
+				/* Ex-Large devices (large desktops, 1200px and up) */
+				@media (min-width: 1400px) {
+				  .container {
+				    width: 1360px;
+				  }
+				}
+				.photo-gallery, .photo-gallery li {
+					list-style: none;
+					padding: 0;
+				}
+
+				.photo-gallery li {
+					display: inline-block;
+					width: 33%;
+				}
+
+				.photo-gallery li img {
+					width: 100%;
+				}
+				</style>
+
 <head>
 <meta charset="utf-8">
-<title>A Post with Images &#8211;noscript </title>
-
+<title>A Post with Images &#8211; Just Another Jekyll Blog</title>
 <meta name="description" content="Examples and code for displaying images in posts.">
 <meta name="keywords" content="sample post, images, test">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.jasoncwilley.github.io/jajb/images/">
+<meta name="twitter:image" content="http://localhost:4000/images/">
 <meta name="twitter:title" content="A Post with Images">
 <meta name="twitter:description" content="Examples and code for displaying images in posts.">
 <meta name="twitter:creator" content="@BillyLomax0001">
@@ -22,69 +556,69 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="A Post with Images">
 <meta property="og:description" content="Examples and code for displaying images in posts.">
-<meta property="og:url" content="https://www.jasoncwilley.github.io/jajb/sample-post-images">
-<meta property="og:site_name" content="">
+<meta property="og:url" content="http://localhost:4000/sample-post-images">
+<meta property="og:site_name" content="Just Another Jekyll Blog">
 
 
 
 
 
-<link rel="canonical" href="https://www.jasoncwilley.github.io/jajb/sample-post-images">
-<link href="https://www.jasoncwilley.github.io/jajb/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+<link rel="canonical" href="http://localhost:4000/sample-post-images">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed">
 
-<!-- https://t.co/dKP3o1e -->
+<!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://www.jasoncwilley.github.io/jajb/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
-<meta https-equiv="cleartype" content="on">
+<meta http-equiv="cleartype" content="on">
 
 <!-- Load Modernizr -->
-<script src="https://www.jasoncwilley.github.io/jajb/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="https://www.jasoncwilley.github.io/jajb/favicon.ico">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="https://www.jasoncwilley.github.io/jajb/favicon.png">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.jasoncwilley.github.io/jajb/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 
 
 
 
-<style type="text/css">body {background-image:url(https://www.jasoncwilley.github.io/jajb/images/18f3be9e.png);}</style>
+<style type="text/css">body {background-image:url(http://localhost:4000/images/18f3be9e.png);}</style>
 
 
 </head>
 
 <body id="post" >
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="https://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
 	<ul class="dl-menu">
-		<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></a>
+		<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></a>
 		<li>
 			<a href="#">About</a>
 			<ul class="dl-submenu">
 				<li>
-					<img src="https://www.jasoncwilley.github.io/jajb/images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
+					<img src="http://localhost:4000/images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
 					<h4>Jay Willey</h4>
 					<p>Sometimes convential wisdom is just popular stupidity.</p>
 				</li>
-				<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='https://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></li>
+				<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></li>
 				<li>
 					<a href="mailto:el337one1@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
 				</li>
@@ -112,8 +646,8 @@
 		<li>
 			<a href="#">Posts</a>
 			<ul class="dl-submenu">
-				<li><a href="https://www.jasoncwilley.github.io/jajb/posts/">All Posts</a></li>
-				<li><a href="https://www.jasoncwilley.github.io/jajb/tags/">All Tags</a></li>
+				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
+				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
 			</ul>
 	
 		
@@ -140,14 +674,14 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="https://www.jasoncwilley.github.io/jajb/sample-post-images" rel="bookmark" title="A Post with Images">A Post with Images</a></h1>
+          <h1 class="entry-title"><a href="http://localhost:4000/sample-post-images" rel="bookmark" title="A Post with Images">A Post with Images</a></h1>
         
         <h2><span class="entry-date date published"><time datetime="2013-05-22T00:00:00-04:00">May 22, 2013</time></span></h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           
-Reading time ~2 minutes
+Reading time ~1 minute
         </p><!-- /.entry-reading-time -->
         
       </div><!-- /.header-title-wrap -->
@@ -160,29 +694,28 @@ Reading time ~2 minutes
 <h3 id="one-up">One Up</h3>
 
 <figure>
-	<a href="https://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="https://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt="" /></a>
-	<figcaption><a href="https://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt="" /></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
 </figure>
 
 <h3 id="two-up">Two Up</h3>
 
 <p>Apply the <code class="highlighter-rouge">half</code> class like so to display two images side by side that share the same caption.</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"half"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"half"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-1.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-2.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;figcaption&gt;</span>Caption describing these two images.<span class="nt">&lt;/figcaption&gt;</span>
 <span class="nt">&lt;/figure&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And you’ll get something that looks like this:</p>
 
 <figure class="half">
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<img src="https://placehold.it/600x300.jpg" alt="" />
-	<img src="https://placehold.it/600x300.jpg" alt="" />
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<img src="http://placehold.it/600x300.jpg" alt="" />
+	<img src="http://placehold.it/600x300.jpg" alt="" />
 	<figcaption>Two images.</figcaption>
 </figure>
 
@@ -190,24 +723,23 @@ Reading time ~2 minutes
 
 <p>Apply the <code class="highlighter-rouge">third</code> class like so to display three images side by side that share the same caption.</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"third"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"https://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"third"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;&lt;/a&gt;</span>
 	<span class="nt">&lt;figcaption&gt;</span>Caption describing these three images.<span class="nt">&lt;/figcaption&gt;</span>
 <span class="nt">&lt;/figure&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And you’ll get something that looks like this:</p>
 
 <figure class="third">
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
-	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="" /></a>
 	<figcaption>Three images.</figcaption>
 </figure>
 
@@ -241,14 +773,13 @@ and fill the block with any number of links to images. You can mix relative and 
 
 <p>Here is the block you might want to use:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">images</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">images</span><span class="w"> </span><span class="p">%}</span>
 	/images/abstract-10.jpg
 	/images/abstract-11.jpg
-	https://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
+	http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
 <span class="p">{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
 <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">gallery</span><span class="w"> </span><span class="na">images</span><span class="o">=</span><span class="nv">images</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Test images"</span><span class="w"> </span><span class="na">cols</span><span class="o">=</span><span class="mi">3</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Parameters:</p>
 
@@ -260,406 +791,26 @@ Available values: [1..3].</li>
 
 <p>It will look something like this:</p>
 
-<html class="no-js" lang="en"><!--<![endif]-->
-    <head>
-      <meta charset="utf-8" />
-<title>bootstrap-photogalleries &#8211; Just Another Jekyll Blog</title>
-<meta name="description" content="Various photogalleries that were created using the bootstrap plugin" />
-<meta name="keywords" content="picture, pictures, bootstrap, photo galleries, jekyll-plugins, picture-post layout" />
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="/images/" />
-<meta name="twitter:title" content="bootstrap-photogalleries" />
-<meta name="twitter:description" content="Various photogalleries that were created using the bootstrap plugin" />
-<meta name="twitter:creator" content="@BillyLomax0001" />
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="bootstrap-photogalleries" />
-<meta property="og:description" content="Various photogalleries that were created using the bootstrap plugin" />
-<meta property="og:url" content="/Bootstrap-Photo-Gallery-Variations" />
-<meta property="og:site_name" content="Just Another Jekyll Blog" />
-
-
-
-
-
-<link rel="canonical" href="/Bootstrap-Photo-Gallery-Variations" />
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed" />
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css" />
-<!-- Webfonts -->
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css" />
-
-<meta https-equiv="cleartype" content="on" />
-
-<!-- Load Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico" />
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png" />
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png" />
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png" />
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png" />
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png" />
-
-
-
-
-<style type="text/css">body {background-image:url(/images/hyperhex.jpg);}</style>
-
-
-    </head>
-  <body id="page">
-
-       <!--[if lt IE 9]><div class="upgrade"><strong><a href="https://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-       <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Open Menu</button>
-	<ul class="dl-menu">
-		<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="https://images.webestools.com/buttons.php?frm=1&amp;btn_type=13&amp;txt=Resume" onmouseover="this.src='https://images.webestools.com/buttons.php?frm=2&amp;btn_type=13&amp;txt=Resume'" onmouseout="this.src='https://images.webestools.com/buttons.php?frm=1&amp;btn_type=13&amp;txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script>&lt;/a&gt;
-		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="/images/avatar.jpg" alt="Jay Willey photo" class="author-photo" />
-					<h4>Jay Willey</h4>
-					<p>Sometimes convential wisdom is just popular stupidity.</p>
-				</li>
-				<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="https://images.webestools.com/buttons.php?frm=1&amp;btn_type=13&amp;txt=Resume" onmouseover="this.src='https://images.webestools.com/buttons.php?frm=2&amp;btn_type=13&amp;txt=Resume'" onmouseout="this.src='https://images.webestools.com/buttons.php?frm=1&amp;btn_type=13&amp;txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "https://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></li>
-				<li>
-					<a href="mailto:el337one1@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/BillyLomax0001"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
-				</li>
-				<li>
-					<a href="https://keybase.io/starscape"><i><img src="/images/keybase.png" class="author-photo" /></i> Keybase</a>
-				</li>
-				<li>
-					<a href="https://google.com/+el337one1@gmail.com"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
-				</li>
-
-				<li>
-					<a href="https://github.com/jasoncwilley"><i class="fa fa-fw fa-github"></i> GitHub</a>
-				</li>
-
-				<li>
-					<a href="https://instagram.com/jcdubbau"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
-				</li>
-
-
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="/posts/">All Posts</a></li>
-				<li><a href="/tags/">All Tags</a></li>
-			</ul>
-
-
-
-	    <li><a href="https://jasoncwilley.github.io/jajb/portfolio.html" target="_blank">Portfolio</a></li>
-
-
-	    <li><a href="https://jasoncwilley.github.io/jajb/interests.html" target="_blank">Interests</a></li>
-
-
-	    <li><a href="https://jasoncwilley.github.io/jajb/photo-gallery.html" target="_blank">Pictures</a></li>
-
-
-	    <li><a href="https://jasoncwilley.github.io/jajb/randomness.html" target="_blank">Random(ness)</a></li>
-
-	&lt;/ul&gt;<!-- /.dl-menu -->
-&lt;/nav&gt;<!-- /.dl-menuwrapper -->
-
-
-
-
-layout: page
-title: Pictures
-image:
-    feature: abstract-10.jpg
-    background: d50b0862.png
-comment: True
-share: True
-
----
-
-
-<head>
-
-    <meta charset="utf-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>Thumbnail Gallery - Start Bootstrap Template</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
-    <link href="/assets/css/thumbnail-gallery.css" rel="stylesheet" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-
-
-
-<div class="bs-example">
-    <div class="container">
-        <div class="row">
-            &lt;div class="col-xs-3" style= max&gt;
-                &lt;a href="#" class="thumbnail" <style>="width":125px; height:125px"/>
-                    <img src="/images/beaniepanda.jpg" alt="125x125">
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                    <img src="/images/ratsinoakland.jpg" alt="125x125">
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                    <img src="/images/rainbowfeast.jpg" alt="125x125">
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                    <img src="/images/wc_kek.jpg" alt="125x125">
-                </a>
-            </div>
-        </div>
-    </div>    <!-- Page Content -->
-
-
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/keybase.png" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/palmtree.jpeg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/vahills.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/quadrantidmeteorshower.jpeg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/summersolstice.jpeg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/bodegabay.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/endoftheroad.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/earthspace.jpeg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/bodegabay.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="/images/earthspace.jpeg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-    <figure class="third">
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<a href="https://placehold.it/1200x600.jpg"><img src="https://placehold.it/600x300.jpg" alt=""></a>
-    	<figcaption>Caption describing these three images.</figcaption>
-    </figure>
-
-
-
-      
-
-
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-   
-    <div class="container">
-      <div class="row">
-    <div class="col-sm-12">
-     <div  id="my slider" class= "carousel slide" data-ride= "carousel">
-
-</div clas="carousel-inner" role="listbox">
-</div class= "item active">
-<img src="KEKboard.png" alt ="KEK"/>
-</div>
-</div>
-</div>
- <style type="text/css"> =
-   .size(@width; @height) {
-  width: 200px;
-  height: 200px
-}
-.square(@size) {
-  .size(400px, 400px);
-}
-
-// Usage
-.image { .size(400px; 300px); }
-.avatar { .square(48px); }
-"</style>
-<div>
-
-<style type="text/css"> .pic{ width:400px; height:217px; background: <img src="KEKboard.png"> no-repeat; } .text{ width:340px; height:217px; background:#FFF; opacity:0; } .pic:hover .text { opacity:0.6; text-align:justify; color:#000000; font-size:20px; font-weight:700; font-family:"Times New Roman", Times, serif; padding:30px; } </style> 
-
-
-
-         
-           <img src="KEKboard.png" class="img-circle" alt="Circular Image" />
-           <img src="KEKboard.png" class="img-thumbnail" alt="Thumbnail Image" />
-       </div>
-
-</div>
-
-
-
-
-
-      <style type="text/css">
-          img{
-              margin: 10px;
-          }
-       class="thumbnail"{
-           margin: 20px;
-          }
-      </style>
-
-
-        <div class="row">
-            <div class="col-xs-9">
-                <a href="#" class="thumbnail">
-                  <img src="KEKboard.png" alt="125x125" />
-                </a>
-            </div>
-<div class="row">
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                    <img src="/examples/images/125x125.jpg" alt="125x125" />
-                          <img src="KEKboard.png" alt="125x125" />
-                </a>
-            </div>
-            <div class="col-xs-3">
-         s     <a href="#" class="thumbnail">
-                  <img src="KEKboard.png" alt="125x125" />
-              </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                    <img src="KEKboard.png" alt="125x125" />
-                </a>
-            </div>
-        </div>
-    </div>
+<figure class="third">
     
-    <style type="text/css">
-    .carousel{
-        background: #2f4357;
-        margin-top: 20px;
-    }
-    .carousel .item{
-        min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-    }
-    .carousel .item img{
-        margin: 0 auto; /* Align slide image horizontally center */
-    }
-    .bs-example{
-    	margin: 20px;
-    }
-    </style>
-    &lt;/head&gt;
-    <body>
-    <div class="bs-example">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    &lt;img src="KEKboard.png"alt="First Slide"&gt;
-                </div>https://www.tutorialrepublic.com/examples/images/slide1.png
-                <div class="item">
-                    <img src="KEKboard.png" alt="Second Slide" />
-                </div>
-                <div class="item">wc
-                    <img src="KEKboard.png" alt="Third Slide" />
-                </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-  	<style type="text/css"> .pic{ width:400px; height:217px; background: url(https://www.corelangs.com/css/box/img/tiger.png) no-repeat; } .text{ width:340px; height:217px; background:#FFF; opacity:0; } .pic:hover .text { opacity:0.6; text-align:justify; color:#000000; font-size:20px; font-weight:700; font-family:"Times New Roman", Times, serif; padding:30px; } </style> &lt;/head&gt; <body> <div class="pic"> <div class="text"> The tiger is the largest cat species, reaching a total body length of up to 3.3 m and weighing up to 306 kg. Its most recognizable feature is a pattern of dark vertical stripes on reddish-orange fur with a lighter underside. </div> </div>
-    </body>
-    	<style type="text/css"> .pic{ width:400px; height:217px; background: url(https://www.corelangs.com/css/box/img/tiger.png) no-repeat; } .text{ width:340px; height:217px; background:#FFF; opacity:0; } .pic:hover .text { opacity:0.6; text-align:justify; color:#000000; font-size:20px; font-weight:700; font-family:"Times New Roman", Times, serif; padding:30px; } </style> &lt;/head&gt; <body> <div class="pic"> <div class="text"> The tiger is the largest cat species, reaching a total body length of up to 3.3 m and weighing up to 306 kg. Its most recognizable feature is a pattern of dark vertical stripes on reddish-orange fur with a lighter underside. </div> </div>
+    <a href="/images/abstract-10.jpg"><img src="/images/abstract-10.jpg" alt="" /></a>
+    
+    <a href="/images/abstract-11.jpg"><img src="/images/abstract-11.jpg" alt="" /></a>
+    
+    <a href="http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png"><img src="http://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png" alt="" /></a>
+    
+    <figcaption>Test images</figcaption>
+</figure>
 
-</body></div></body></div></div></body></li></li></ul></nav></body></html>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="https://www.jasoncwilley.github.io/jajb/tags/#sample post" title="Pages tagged sample post" class="tag"><span class="term">sample post</span></a><a href="https://www.jasoncwilley.github.io/jajb/tags/#images" title="Pages tagged images" class="tag"><span class="term">images</span></a><a href="https://www.jasoncwilley.github.io/jajb/tags/#test" title="Pages tagged test" class="tag"><span class="term">test</span></a></span>
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#sample post" title="Pages tagged sample post" class="tag"><span class="term">sample post</span></a><a href="http://localhost:4000/tags/#images" title="Pages tagged images" class="tag"><span class="term">images</span></a><a href="http://localhost:4000/tags/#test" title="Pages tagged test" class="tag"><span class="term">test</span></a></span>
         
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.jasoncwilley.github.io/jajb/sample-post-images" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https://www.jasoncwilley.github.io/jajb/sample-post-images" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=https://www.jasoncwilley.github.io/jajb/sample-post-images" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/sample-post-images" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/sample-post-images" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/sample-post-images" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -668,23 +819,23 @@ share: True
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="https://www.jasoncwilley.github.io/jajb/readability-post" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/readability-post" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="https://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations" title="bootstrap-photogalleries">bootstrap-photogalleries</a></h3>
-      <p>Various photogalleries that were created using the bootstrap plugin <a href="https://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/how-to-install-virtualenv-on-arch" title="How to install virtualenv on ArchLinux">How to install virtualenv on ArchLinux</a></h3>
+      <p>Installing virtualenv and it's dependencies on ArchLinux. <a href="http://localhost:4000/how-to-install-virtualenv-on-arch">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="https://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch" title="How to install virtualenv on ArchLinux">How to install virtualenv on ArchLinux</a></h4>
-        <span>Published on March 02, 2018</span>
+        <h4><a href="http://localhost:4000/uploaded-some-pics" title="Some Pics From My Travels">Some Pics From My Travels</a></h4>
+        <span>Published on March 01, 2018</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="https://www.jasoncwilley.github.io/jajb/uploaded-some-pics" title="Some Pics From My Travels">Some Pics From My Travels</a></h4>
-        <span>Published on March 01, 2018</span>
+        <h4><a href="http://localhost:4000/conky-install-and-config-post" title="Conky Setup">Conky Setup</a></h4>
+        <span>Published on February 14, 2018</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
@@ -694,13 +845,13 @@ share: True
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <span>&copy; 2018 Jay Willey. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+    <span>&copy; 2018 Jay Willey. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
   </footer>
 </div><!-- /.footer-wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://www.jasoncwilley.github.io/jajb/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="https://www.jasoncwilley.github.io/jajb/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
 
 
 
@@ -724,9 +875,16 @@ share: True
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </body>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/respond.js"></script>
+<script src="/assets/js/plugins/jquery.dlmenu.js"></script>
+<script src= "/assets/js/plugins/jquery.fitvids.js"></script>
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+
 </html>

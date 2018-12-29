@@ -293,7 +293,7 @@ window.matchMedia = window.matchMedia || (function( doc, undefined ) {
 		},
 		//tweaked Ajax functions from Quirksmode
 		ajax = function( url, callback ) {
-			var req = xmlhttps();
+			var req = xmlHttp();
 			if (!req){
 				return;
 			}	
@@ -310,16 +310,16 @@ window.matchMedia = window.matchMedia || (function( doc, undefined ) {
 			req.send( null );
 		},
 		//define ajax obj 
-		xmlhttps = (function() {
-			var xmlhttpsmethod = false;	
+		xmlHttp = (function() {
+			var xmlhttpmethod = false;	
 			try {
-				xmlhttpsmethod = new win.XMLhttpsRequest();
+				xmlhttpmethod = new win.XMLHttpRequest();
 			}
 			catch( e ){
-				xmlhttpsmethod = new win.ActiveXObject( "Microsoft.XMLhttps" );
+				xmlhttpmethod = new win.ActiveXObject( "Microsoft.XMLHTTP" );
 			}
 			return function(){
-				return xmlhttpsmethod;
+				return xmlhttpmethod;
 			};
 		})();
 	

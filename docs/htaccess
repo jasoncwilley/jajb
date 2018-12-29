@@ -4,7 +4,7 @@ layout: none
 permalink: .htaccess
 ---
 RewriteEngine On
-RewriteCond %{https_host} ^www.newbieonruby.com [nc]
-RewriteRule ^(.*)$ https://newbieonruby.com/$1 [r=301,nc]
+RewriteCond %{http_host} ^www.newbieonruby.com [nc]
+RewriteRule ^(.*)$ http://newbieonruby.com/$1 [r=301,nc]
 
 
