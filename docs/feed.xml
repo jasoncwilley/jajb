@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="https://www.jasoncwilley.github.io/jajb/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.jasoncwilley.github.io/jajb/" rel="alternate" type="text/html" /><updated>2018-12-29T08:03:02-05:00</updated><id>https://www.jasoncwilley.github.io/jajb/</id><entry><title>bootstrap-photogalleries</title><link href="https://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations" rel="alternate" type="text/html" title="bootstrap-photogalleries" /><published>2018-05-22T00:00:00-04:00</published><updated>2018-05-22T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations"></content><category term="picture" /><category term="pictures" /><category term="bootstrap" /><category term="photo galleries" /><category term="jekyll-plugins" /><category term="picture-post layout" /><summary></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;hyperhex.jpg&quot;}" /></entry><entry><title>How to install virtualenv on ArchLinux</title><link href="https://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch" rel="alternate" type="text/html" title="How to install virtualenv on ArchLinux" /><published>2018-03-02T00:00:00-05:00</published><updated>2018-03-02T00:00:00-05:00</updated><id>https://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch">&lt;p&gt;##Python and ArchLinux&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="http://www.jasoncwilley.github.io/jajb/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.jasoncwilley.github.io/jajb/" rel="alternate" type="text/html" /><updated>2018-12-29T08:03:02-05:00</updated><id>http://www.jasoncwilley.github.io/jajb/</id><entry><title>bootstrap-photogalleries</title><link href="http://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations" rel="alternate" type="text/html" title="bootstrap-photogalleries" /><published>2018-05-22T00:00:00-04:00</published><updated>2018-05-22T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/Bootstrap-Photo-Gallery-Variations"></content><category term="picture" /><category term="pictures" /><category term="bootstrap" /><category term="photo galleries" /><category term="jekyll-plugins" /><category term="picture-post layout" /><summary></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;hyperhex.jpg&quot;}" /></entry><entry><title>How to install virtualenv on ArchLinux</title><link href="http://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch" rel="alternate" type="text/html" title="How to install virtualenv on ArchLinux" /><published>2018-03-02T00:00:00-05:00</published><updated>2018-03-02T00:00:00-05:00</updated><id>http://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/how-to-install-virtualenv-on-arch">&lt;p&gt;##Python and ArchLinux&lt;/p&gt;
 
 &lt;p&gt;ArchLinux may not be the most user friendly Linux OS and in my opinion that is by design.  Simply installing ArchLinux is a feat for the novice linux user.  Once installed users must configure the system and I’d be willing to bet that the majority of those new to Arch never make it through the configuration phase post install.  Over the years I have played around with Archlinux and after spending hours digging through the docs, Archwiki, and watching countless Youtube videos a lightbulb went off and all the puzzle pieces began to fit together.  If you have not had a chance to check out my ArchLinux install tutorial please take a minute to check it out.&lt;/p&gt;
 
@@ -59,7 +59,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: httpss://disqus.com/admin/universalcode/#configuration-variables*/
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
@@ -74,10 +74,10 @@ s.setAttribute(&#39;data-timestamp&#39;, +new Date());
 })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;httpss://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="python" /><category term="pip" /><category term="virturalenv" /><category term="archlinux" /><category term="install" /><category term="guide" /><category term="step by step" /><category term="tutorial" /><summary>##Python and ArchLinux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry><entry><title>Some Pics From My Travels</title><link href="https://www.jasoncwilley.github.io/jajb/uploaded-some-pics" rel="alternate" type="text/html" title="Some Pics From My Travels" /><published>2018-03-01T00:00:00-05:00</published><updated>2018-03-01T00:00:00-05:00</updated><id>https://www.jasoncwilley.github.io/jajb/uploaded-some-pics</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/uploaded-some-pics">&lt;figure&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="python" /><category term="pip" /><category term="virturalenv" /><category term="archlinux" /><category term="install" /><category term="guide" /><category term="step by step" /><category term="tutorial" /><summary>##Python and ArchLinux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry><entry><title>Some Pics From My Travels</title><link href="http://www.jasoncwilley.github.io/jajb/uploaded-some-pics" rel="alternate" type="text/html" title="Some Pics From My Travels" /><published>2018-03-01T00:00:00-05:00</published><updated>2018-03-01T00:00:00-05:00</updated><id>http://www.jasoncwilley.github.io/jajb/uploaded-some-pics</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/uploaded-some-pics">&lt;figure&gt;
     
     &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;</content><category term="picture" /><category term="pictures" /><category term="travels" /><category term="trips" /><category term="vacation" /><category term="r and r" /><category term="pictur-post layout" /><summary></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry><entry><title>Conky Setup</title><link href="https://www.jasoncwilley.github.io/jajb/conky-install-and-config-post" rel="alternate" type="text/html" title="Conky Setup" /><published>2018-02-14T00:00:00-05:00</published><updated>2018-02-14T00:00:00-05:00</updated><id>https://www.jasoncwilley.github.io/jajb/conky-install-and-config-post</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/conky-install-and-config-post">&lt;p&gt;##Conky Install&lt;/p&gt;
+&lt;/figure&gt;</content><category term="picture" /><category term="pictures" /><category term="travels" /><category term="trips" /><category term="vacation" /><category term="r and r" /><category term="pictur-post layout" /><summary></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry><entry><title>Conky Setup</title><link href="http://www.jasoncwilley.github.io/jajb/conky-install-and-config-post" rel="alternate" type="text/html" title="Conky Setup" /><published>2018-02-14T00:00:00-05:00</published><updated>2018-02-14T00:00:00-05:00</updated><id>http://www.jasoncwilley.github.io/jajb/conky-install-and-config-post</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/conky-install-and-config-post">&lt;p&gt;##Conky Install&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Conky is a system monitor software for the X Window System. It is available for GNU/Linux and FreeBSD. It is free software released under the terms of the GPL license. Conky is able to monitor many system variables including CPU, memory, swap, disk space, temperature, top, upload, download, system messages, and much more. It is extremely configurable, however, the configuration can be a little hard to understand. Conky is a fork of torsmo.&lt;/li&gt;
@@ -213,8 +213,8 @@ ${goto 10}${voffset -2}${top_mem name 4}${alignr 10}${top mem 4}%
 ${voffset -2}${color4}${alignc}${font DejaVu Sans Mono:size=15}Network Information ${font}${color}
 ${goto 10}
 ${goto 10}${color1} LAN IP:   ${addr enp3s0}
-${goto 10}WAN IP:  ${execi 300 curl https://icanhazip.com}
-${goto 10} EXT IP:   ${execi 300 curl https://ipinfo.io/ip}${color}
+${goto 10}WAN IP:  ${execi 300 curl http://icanhazip.com}
+${goto 10} EXT IP:   ${execi 300 curl http://ipinfo.io/ip}${color}
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -302,7 +302,7 @@ ${color2}${font DejaVu Sans Mono:size=16} Updates Available:${font}${execi 3600 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;If you did everything correctly you should now have a copy of Neo-HPSTR on in a folder called hpstr-jekyll-theme-master on your desktop.  The next section of the tutorial deals with configuring theme.  if you have not already installed jekyll and it’s dependencies please do that before preceeding. Link to &lt;a href=&quot;https://jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post/&quot;&gt;Jekyll Install Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you did everything correctly you should now have a copy of Neo-HPSTR on in a folder called hpstr-jekyll-theme-master on your desktop.  The next section of the tutorial deals with configuring theme.  if you have not already installed jekyll and it’s dependencies please do that before preceeding. Link to &lt;a href=&quot;http://jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post/&quot;&gt;Jekyll Install Tutorial&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-conkyrc-files&quot;&gt;Running the conkyrc files&lt;/h2&gt;
 
@@ -327,7 +327,7 @@ userone@laptop:~/.config/conky/$ conky -c mintypc-leftside-conkyrc
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: httpss://disqus.com/admin/universalcode/#configuration-variables*/
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
@@ -342,24 +342,24 @@ s.setAttribute(&#39;data-timestamp&#39;, +new Date());
 })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;httpss://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="conky" /><category term="themes" /><category term="examples" /><category term="scripts" /><category term="install" /><category term="configuration" /><summary>##Conky Install</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry><entry><title>Neo-HPSTR Theme Configuration</title><link href="https://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post" rel="alternate" type="text/html" title="Neo-HPSTR Theme Configuration" /><published>2016-11-02T00:00:00-04:00</published><updated>2016-11-02T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post">&lt;h2 id=&quot;neo-hpstr-features&quot;&gt;Neo-HPSTR Features&lt;/h2&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="conky" /><category term="themes" /><category term="examples" /><category term="scripts" /><category term="install" /><category term="configuration" /><summary>##Conky Install</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry><entry><title>Neo-HPSTR Theme Configuration</title><link href="http://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post" rel="alternate" type="text/html" title="Neo-HPSTR Theme Configuration" /><published>2016-11-02T00:00:00-04:00</published><updated>2016-11-02T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post">&lt;h2 id=&quot;neo-hpstr-features&quot;&gt;Neo-HPSTR Features&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Neo-HPSTR is a fully functional Jekyll Blog theme created by Michael Rose&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;httpss://mademistakes.com/support/&quot;&gt;&lt;img style=&quot;border:0px;&quot; src=&quot;https://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&quot; onmouseover=&quot;this.src=&#39;https://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&#39;&quot; onmouseout=&quot;this.src=&#39;https://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&#39;;&quot; alt=&quot;Support%20the%20Developer&quot; /&gt;&lt;/a&gt;&lt;script type=&quot;text/javascript&quot;&gt;img=new Image();img.src= &quot;https://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&quot;;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mademistakes.com/support/&quot;&gt;&lt;img style=&quot;border:0px;&quot; src=&quot;http://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&quot; onmouseover=&quot;this.src=&#39;http://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&#39;&quot; onmouseout=&quot;this.src=&#39;http://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&#39;;&quot; alt=&quot;Support%20the%20Developer&quot; /&gt;&lt;/a&gt;&lt;script type=&quot;text/javascript&quot;&gt;img=new Image();img.src= &quot;http://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Support%20the%20Developer&quot;;&lt;/script&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Modern and minimal design.&lt;/li&gt;
   &lt;li&gt;Responsive templates for post, page, and post index &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt;. Looks great on mobile, tablet, and desktop devices.&lt;/li&gt;
   &lt;li&gt;Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.&lt;/li&gt;
   &lt;li&gt;Sweet animated menu with support for drop-downs.&lt;/li&gt;
-  &lt;li&gt;Optional &lt;a href=&quot;https://disqus.com&quot;&gt;Disqus&lt;/a&gt; comments and social sharing links.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;httpss://developers.facebook.com/docs/opengraph/&quot;&gt;Open Graph&lt;/a&gt; and &lt;a href=&quot;httpss://dev.twitter.com/docs/cards&quot;&gt;Twitter Cards&lt;/a&gt; support for a better social sharing experience.&lt;/li&gt;
-  &lt;li&gt;Simple &lt;a href=&quot;https://mmistakes.github.io/hpstr-jekyll-theme/404.html&quot;&gt;custom 404 page&lt;/a&gt; to get you started.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/&quot;&gt;Syntax highlighting&lt;/a&gt; stylesheet to make your code examples look snazzy&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;httpss://github.com/cruznick/hpstr-jekyll-theme/tree/es&quot;&gt;Available in Spanish&lt;/a&gt;. Thanks &lt;a href=&quot;httpss://github.com/cruznick&quot;&gt;@cruznick&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Optional &lt;a href=&quot;http://disqus.com&quot;&gt;Disqus&lt;/a&gt; comments and social sharing links.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.facebook.com/docs/opengraph/&quot;&gt;Open Graph&lt;/a&gt; and &lt;a href=&quot;https://dev.twitter.com/docs/cards&quot;&gt;Twitter Cards&lt;/a&gt; support for a better social sharing experience.&lt;/li&gt;
+  &lt;li&gt;Simple &lt;a href=&quot;http://mmistakes.github.io/hpstr-jekyll-theme/404.html&quot;&gt;custom 404 page&lt;/a&gt; to get you started.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/&quot;&gt;Syntax highlighting&lt;/a&gt; stylesheet to make your code examples look snazzy&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cruznick/hpstr-jekyll-theme/tree/es&quot;&gt;Available in Spanish&lt;/a&gt;. Thanks &lt;a href=&quot;https://github.com/cruznick&quot;&gt;@cruznick&lt;/a&gt;!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;download-the-theme&quot;&gt;Download the Theme&lt;/h2&gt;
@@ -370,11 +370,11 @@ userone@laptop:~/Desktop$
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;httpss://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip&quot;&gt;&lt;img style=&quot;border:0px;&quot; src=&quot;https://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&quot; onmouseover=&quot;this.src=&#39;https://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&#39;&quot; onmouseout=&quot;this.src=&#39;https://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&#39;;&quot; alt=&quot;Download%20the%20Theme&quot; /&gt;&lt;/a&gt;&lt;script type=&quot;text/javascript&quot;&gt;img=new Image();img.src= &quot;https://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&quot;;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip&quot;&gt;&lt;img style=&quot;border:0px;&quot; src=&quot;http://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&quot; onmouseover=&quot;this.src=&#39;http://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&#39;&quot; onmouseout=&quot;this.src=&#39;http://images.webestools.com/buttons.php?frm=1&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&#39;;&quot; alt=&quot;Download%20the%20Theme&quot; /&gt;&lt;/a&gt;&lt;script type=&quot;text/javascript&quot;&gt;img=new Image();img.src= &quot;http://images.webestools.com/buttons.php?frm=2&amp;amp;btn_type=16&amp;amp;txt=Download%20the%20Theme&quot;;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Click the button or enter the following commands into the terminal.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget httpss://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -384,7 +384,7 @@ userone@laptop:~/Desktop$
 unzip ~/Desktop/hpstr-jekyll-theme-master/
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;If you did everything correctly you should now have a copy of Neo-HPSTR on in a folder called hpstr-jekyll-theme-master on your desktop.  The next section of the tutorial deals with configuring theme.  if you have not already installed jekyll and it’s dependencies please do that before preceeding. Link to &lt;a href=&quot;https://jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post/&quot;&gt;Jekyll Install Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you did everything correctly you should now have a copy of Neo-HPSTR on in a folder called hpstr-jekyll-theme-master on your desktop.  The next section of the tutorial deals with configuring theme.  if you have not already installed jekyll and it’s dependencies please do that before preceeding. Link to &lt;a href=&quot;http://jasoncwilley.github.io/jajb/neo-hipster-theme-configuration-post/&quot;&gt;Jekyll Install Tutorial&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;basic-setup-and-configuration&quot;&gt;Basic Setup and Configuration&lt;/h2&gt;
 
@@ -416,7 +416,7 @@ terminal.&lt;/p&gt;
 description:      Provide a short description of your blog
 disqus_shortname: We will deal with Disqus in the next section leave blank for now.
 
-url: https://jasoncwilley.github.io/jajb/ The url must be set to localhost:4000 when running it locally and you will need to change this to your websites address before deploying our blog.  
+url: http://jasoncwilley.github.io/jajb/ The url must be set to localhost:4000 when running it locally and you will need to change this to your websites address before deploying our blog.  
 
 Owner/author information You must provide information for the name, bio, and email variables or some sections of the site will not function correctly.   
 owner:
@@ -442,7 +442,7 @@ timezone:    Change if not are not in the America/New_York time zone.
 &lt;h2 id=&quot;running-jekyll&quot;&gt;Running Jekyll&lt;/h2&gt;
 
 &lt;p&gt;The preferred method for running Jekyll is with ==bundle exec jekyll “command option”==, but if you’re willing to deal gem conflicts feel free to go cowboy with a ==jekyll build== or ==jekyll serve==.  Once you have dealt with gem conflicts I assure you, you will have no problem typing a few more characters and launching the site using == bundle exec jekyll serve==
-That said, enter the following commands into the terminal and launch the site on your local server (https://jasoncwilley.github.io/jajb/).&lt;/p&gt;
+That said, enter the following commands into the terminal and launch the site on your local server (http://jasoncwilley.github.io/jajb/).&lt;/p&gt;
 
 &lt;p&gt;In some cases you may want to rebuild your blog before launching it.  To do this you just need to run ==bundle exec jekyll build== before launching the site.&lt;/p&gt;
 
@@ -459,12 +459,12 @@ Configuration file: /home/userone/Development/jajb-master/_config.yml
                     done in 1.003 seconds.
  Auto-regeneration: enabled for &#39;/home/userone/Development/jajb-master&#39;
 Configuration file: /home/userone/Development/jajb-master/_config.yml
-    Server address: https://127.0.0.1:4000/
+    Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;If the serve command executes without any errors you should be able to open up a browser and got to https://jasoncwilley.github.io/jajb/) and your new blog should load. If the command executes without an error but does not load in your browser the problem most likely is due to a misconfigured _config.yml file.  To fix this open the _config.yml file and make sure the url: setting is set to https://jasoncwilley.github.io/jajb/.&lt;/p&gt;
+&lt;p&gt;If the serve command executes without any errors you should be able to open up a browser and got to http://jasoncwilley.github.io/jajb/) and your new blog should load. If the command executes without an error but does not load in your browser the problem most likely is due to a misconfigured _config.yml file.  To fix this open the _config.yml file and make sure the url: setting is set to http://jasoncwilley.github.io/jajb/.&lt;/p&gt;
 
 &lt;p&gt;Good Job!  You can now see the fruits of your labor and naviate the default posting included in with the theme.  In the next section of this tutorial I will show you how to set up backgrounds, load avatars and wire up the advanced features in this blog.&lt;/p&gt;
 
@@ -477,7 +477,7 @@ Configuration file: /home/userone/Development/jajb-master/_config.yml
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: httpss://disqus.com/admin/universalcode/#configuration-variables*/
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
@@ -492,7 +492,7 @@ s.setAttribute(&#39;data-timestamp&#39;, +new Date());
 })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;httpss://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="jekyll" /><category term="theme" /><category term="tutorial" /><category term="neo-hipster" /><category term="neo-hpstr" /><category term="disqus" /><category term="open graph" /><category term="developer" /><category term="mmistakes" /><category term="install" /><category term="configuration" /><summary>Neo-HPSTR Features</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;v4truth.png&quot;}" /></entry><entry><title>Installing Jekyll</title><link href="https://www.jasoncwilley.github.io/jajb/jekyll_install-post" rel="alternate" type="text/html" title="Installing Jekyll" /><published>2016-10-25T00:00:00-04:00</published><updated>2016-10-25T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/jekyll_install-post</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/jekyll_install-post">&lt;h2 id=&quot;installing-jekyll-30&quot;&gt;Installing Jekyll 3.0+&lt;/h2&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="jekyll" /><category term="theme" /><category term="tutorial" /><category term="neo-hipster" /><category term="neo-hpstr" /><category term="disqus" /><category term="open graph" /><category term="developer" /><category term="mmistakes" /><category term="install" /><category term="configuration" /><summary>Neo-HPSTR Features</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;v4truth.png&quot;}" /></entry><entry><title>Installing Jekyll</title><link href="http://www.jasoncwilley.github.io/jajb/jekyll_install-post" rel="alternate" type="text/html" title="Installing Jekyll" /><published>2016-10-25T00:00:00-04:00</published><updated>2016-10-25T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/jekyll_install-post</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/jekyll_install-post">&lt;h2 id=&quot;installing-jekyll-30&quot;&gt;Installing Jekyll 3.0+&lt;/h2&gt;
 
 &lt;p&gt;Over the past few months I have spent countless hours scouring the web for tutorials that will help solidify my web develoment skills. The internet offers many free tutorials on just about every topic you can think.  After a few hours of searching and start or restarting variuos tutorials I figured out that not all web tutorials are created equal.  In light of this I thought I’d take the time to create a few up to date (As of 10/15/2016) tutorials that may help other web development students steer clear of google rabbit holes and stackoverflow loops.&lt;/p&gt;
 
@@ -526,7 +526,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 cd
 
-git clone httpss://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
 
@@ -534,7 +534,7 @@ echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
 
 exec $SHELL
 
-git clone httpss://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 echo &#39;export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;&#39; &amp;gt;&amp;gt; ~/.bashrc
 
@@ -603,14 +603,14 @@ userone@laptop:~/Desktop$ bundle exec jekyll serve
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Now head over to &lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Jekyll’s Documentation page&lt;/a&gt; and familiarize yourself with the program. This will be the starting point in the next entry of this the tutorial. Thanks again for following along and if you have questions or comments feel free to leave a comment.&lt;/p&gt;
+&lt;p&gt;Now head over to &lt;a href=&quot;http://jekyllrb.com/docs/installation/&quot;&gt;Jekyll’s Documentation page&lt;/a&gt; and familiarize yourself with the program. This will be the starting point in the next entry of this the tutorial. Thanks again for following along and if you have questions or comments feel free to leave a comment.&lt;/p&gt;
 
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: httpss://disqus.com/admin/universalcode/#configuration-variables*/
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
@@ -625,22 +625,22 @@ s.setAttribute(&#39;data-timestamp&#39;, +new Date());
 })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;httpss://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="jekyll" /><category term="install" /><category term="tutorial" /><category term="ruby" /><category term="gem" /><category term="bundle" /><summary>Installing Jekyll 3.0+</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;18f3be9e.png&quot;}" /></entry><entry><title>Post with a Background Image</title><link href="https://www.jasoncwilley.github.io/jajb/background-image" rel="alternate" type="text/html" title="Post with a Background Image" /><published>2013-10-26T00:00:00-04:00</published><updated>2013-10-26T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/background-image</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/background-image">&lt;p&gt;Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.&lt;/p&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><category term="jekyll" /><category term="install" /><category term="tutorial" /><category term="ruby" /><category term="gem" /><category term="bundle" /><summary>Installing Jekyll 3.0+</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;18f3be9e.png&quot;}" /></entry><entry><title>Post with a Background Image</title><link href="http://www.jasoncwilley.github.io/jajb/background-image" rel="alternate" type="text/html" title="Post with a Background Image" /><published>2013-10-26T00:00:00-04:00</published><updated>2013-10-26T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/background-image</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/background-image">&lt;p&gt;Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.&lt;/p&gt;
 
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;filename.png&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This little bit of YAML makes the assumption that your background image asset is in the &lt;code class=&quot;highlighter-rouge&quot;&gt;/images&lt;/code&gt; folder. If you place it somewhere else or are hotlinking from the web, just include the full https(s):// URL. Either way you should have a background image that is tiled.&lt;/p&gt;
+&lt;p&gt;This little bit of YAML makes the assumption that your background image asset is in the &lt;code class=&quot;highlighter-rouge&quot;&gt;/images&lt;/code&gt; folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.&lt;/p&gt;
 
 &lt;p&gt;If you want to set a background image for the entire site just add &lt;code class=&quot;highlighter-rouge&quot;&gt;background: filename.png&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; and BOOM — background images on every page!&lt;/p&gt;
 
-&lt;div xmlns:cc=&quot;https://creativecommons.org/ns#&quot; xmlns:dct=&quot;https://purl.org/dc/terms/&quot; about=&quot;https://subtlepatterns.com&quot; class=&quot;notice&quot;&gt;Background images from &lt;span property=&quot;dct:title&quot;&gt;Subtle Patterns&lt;/span&gt; (&lt;a rel=&quot;cc:attributionURL&quot; property=&quot;cc:attributionName&quot; href=&quot;https://subtlepatterns.com&quot;&gt;Subtle Patterns&lt;/a&gt;) / &lt;a rel=&quot;license&quot; href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;</content><category term="sample post" /><summary>Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;420ac4a5.png&quot;}" /></entry><entry><title>Syntax Highlighting Post</title><link href="https://www.jasoncwilley.github.io/jajb/code-highlighting-post" rel="alternate" type="text/html" title="Syntax Highlighting Post" /><published>2013-08-16T00:00:00-04:00</published><updated>2013-08-16T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/code-highlighting-post</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/code-highlighting-post">&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div xmlns:cc=&quot;http://creativecommons.org/ns#&quot; xmlns:dct=&quot;http://purl.org/dc/terms/&quot; about=&quot;http://subtlepatterns.com&quot; class=&quot;notice&quot;&gt;Background images from &lt;span property=&quot;dct:title&quot;&gt;Subtle Patterns&lt;/span&gt; (&lt;a rel=&quot;cc:attributionURL&quot; property=&quot;cc:attributionName&quot; href=&quot;http://subtlepatterns.com&quot;&gt;Subtle Patterns&lt;/a&gt;) / &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;</content><category term="sample post" /><summary>Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;420ac4a5.png&quot;}" /></entry><entry><title>Syntax Highlighting Post</title><link href="http://www.jasoncwilley.github.io/jajb/code-highlighting-post" rel="alternate" type="text/html" title="Syntax Highlighting Post" /><published>2013-08-16T00:00:00-04:00</published><updated>2013-08-16T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/code-highlighting-post</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/code-highlighting-post">&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;gfm-code-blocks&quot;&gt;GFM Code Blocks&lt;/h3&gt;
 
-&lt;p&gt;GitHub Flavored Markdown &lt;a href=&quot;httpss://help.github.com/articles/creating-and-highlighting-code-blocks/&quot;&gt;fenced code blocks&lt;/a&gt; are supported. To modify styling and highlight colors edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/_sass/syntax.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;GitHub Flavored Markdown &lt;a href=&quot;https://help.github.com/articles/creating-and-highlighting-code-blocks/&quot;&gt;fenced code blocks&lt;/a&gt; are supported. To modify styling and highlight colors edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/_sass/syntax.scss&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -732,12 +732,12 @@ s.setAttribute(&#39;data-timestamp&#39;, +new Date());
 
 &lt;noscript&gt;&lt;pre&gt;404: Not Found
 &lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/mmistakes/6589546.js&quot;&gt; &lt;/script&gt;
+&lt;script src=&quot;http://gist.github.com/mmistakes/6589546.js&quot;&gt; &lt;/script&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Syntax_highlighting&quot;&gt;https://en.wikipedia.org/wiki/Syntax_highlighting&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Syntax_highlighting&quot;&gt;http://en.wikipedia.org/wiki/Syntax_highlighting&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><category term="sample post" /><category term="code" /><category term="highlighting" /><summary>Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.1
@@ -745,10 +745,10 @@ s.setAttribute(&#39;data-timestamp&#39;, +new Date());
 
   
     
-      https://en.wikipedia.org/wiki/Syntax_highlighting &amp;#8617;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;18f3be9e.png&quot;}" /></entry><entry><title>Sample Link Post</title><link href="https://www.jasoncwilley.github.io/jajb/sample-link-post" rel="alternate" type="text/html" title="Sample Link Post" /><published>2013-08-12T00:00:00-04:00</published><updated>2013-08-12T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/sample-link-post</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/sample-link-post">&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code class=&quot;highlighter-rouge&quot;&gt;link: https://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;</content><category term="sample post" /><category term="link post" /><summary>This theme supports link posts, made famous by John Gruber. To use, just add link: https://url-you-want-linked to the post’s YAML front matter and you’re done.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;18f3be9e.png&quot;}" /></entry><entry><title>A Post with a Video</title><link href="https://www.jasoncwilley.github.io/jajb/video-post" rel="alternate" type="text/html" title="A Post with a Video" /><published>2013-06-25T00:00:00-04:00</published><updated>2013-06-25T00:00:00-04:00</updated><id>https://www.jasoncwilley.github.io/jajb/video-post</id><content type="html" xml:base="https://www.jasoncwilley.github.io/jajb/video-post">&lt;iframe width=&quot;650&quot; height=&quot;375&quot; src=&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+      http://en.wikipedia.org/wiki/Syntax_highlighting &amp;#8617;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;18f3be9e.png&quot;}" /></entry><entry><title>Sample Link Post</title><link href="http://www.jasoncwilley.github.io/jajb/sample-link-post" rel="alternate" type="text/html" title="Sample Link Post" /><published>2013-08-12T00:00:00-04:00</published><updated>2013-08-12T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/sample-link-post</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/sample-link-post">&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code class=&quot;highlighter-rouge&quot;&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;</content><category term="sample post" /><category term="link post" /><summary>This theme supports link posts, made famous by John Gruber. To use, just add link: http://url-you-want-linked to the post’s YAML front matter and you’re done.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;18f3be9e.png&quot;}" /></entry><entry><title>A Post with a Video</title><link href="http://www.jasoncwilley.github.io/jajb/video-post" rel="alternate" type="text/html" title="A Post with a Video" /><published>2013-06-25T00:00:00-04:00</published><updated>2013-06-25T00:00:00-04:00</updated><id>http://www.jasoncwilley.github.io/jajb/video-post</id><content type="html" xml:base="http://www.jasoncwilley.github.io/jajb/video-post">&lt;iframe width=&quot;650&quot; height=&quot;375&quot; src=&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;https://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;700&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;360&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><category term="sample post" /><category term="video" /><summary></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry></feed>
+&lt;/div&gt;</content><category term="sample post" /><category term="video" /><summary></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.jasoncwilley.github.io/jajb/{&quot;background&quot;=&gt;&quot;cube.png&quot;}" /></entry></feed>
