@@ -1,0 +1,381 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<link type=css/text "https://jasoncwilley.github.io/jajb/assets/css/main.css"></link>
+<link type=css/text "https://jasoncwilley.github.io/jajb/assets/css/photogallery.css"></link>
+<link type=css/text "https://jasoncwilley.github.io/jajb/assets/css/aboutme.css"></link>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+
+<head>
+<meta charset="utf-8">
+<title>Installing Jekyll &#8211; Just Another Jekyll Blog</title>
+<meta name="description" content="Examples and code for displaying images in posts.">
+<meta name="keywords" content="jekyll, install, tutorial, ruby, gem, bundle">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jasoncwilley.github.io/jajb//images/">
+<meta name="twitter:title" content="Installing Jekyll">
+<meta name="twitter:description" content="Examples and code for displaying images in posts.">
+<meta name="twitter:creator" content="@BillyLomax0001">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Installing Jekyll">
+<meta property="og:description" content="Examples and code for displaying images in posts.">
+<meta property="og:url" content="https://jasoncwilley.github.io/jajb//jekyll_install-post">
+<meta property="og:site_name" content="Just Another Jekyll Blog">
+
+
+
+
+
+<link rel="canonical" href="https://jasoncwilley.github.io/jajb//jekyll_install-post">
+<link href="https://jasoncwilley.github.io/jajb//feed.xml" type="application/atom+xml" rel="alternate" title="Just Another Jekyll Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://jasoncwilley.github.io/jajb//assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="https://jasoncwilley.github.io/jajb//assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://jasoncwilley.github.io/jajb//favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://jasoncwilley.github.io/jajb//favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://jasoncwilley.github.io/jajb//images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://jasoncwilley.github.io/jajb//images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://jasoncwilley.github.io/jajb//images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://jasoncwilley.github.io/jajb//images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+<style type="text/css">body {background-image:url(https://jasoncwilley.github.io/jajb//images/18f3be9e.png);}</style>
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></a>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="https://jasoncwilley.github.io/jajb//images/avatar.jpg" alt="Jay Willey photo" class="author-photo">
+					<h4>Jay Willey</h4>
+					<p>Sometimes convential wisdom is just popular stupidity.</p>
+				</li>
+				<li><a href="https://jasoncwilley.github.io/"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Resume';" alt="Resume" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Resume";</script></li>
+				<li>
+					<a href="mailto:el337one1@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/BillyLomax0001"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				<li>
+					<a href="https://keybase.io/starscape"><i><img src= "/images/keybase.png" class="author-photo"></i> Keybase</a>
+				</li>
+				<li>
+					<a href="https://google.com/+el337one1@gmail.com"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
+				</li>
+				
+				<li>
+					<a href="https://github.com/jasoncwilley"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				<li>
+					<a href="https://instagram.com/jcdubbau"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+				</li>
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="https://jasoncwilley.github.io/jajb//posts/">All Posts</a></li>
+				<li><a href="https://jasoncwilley.github.io/jajb//tags/">All Tags</a></li>
+			</ul>
+	
+		
+	    
+	    <li><a href="https://jasoncwilley.github.io/jajb/portfolio.html" target="_blank">Portfolio</a></li>
+	  
+	    
+	    <li><a href="https://jasoncwilley.github.io/jajb/interests.html" target="_blank">Interests</a></li>
+	  
+	    
+	    <li><a href="https://jasoncwilley.github.io/jajb/photo-gallery.html" target="_blank">Pictures</a></li>
+	  
+	    
+	    <li><a href="https://jasoncwilley.github.io/jajb/randomness.html" target="_blank">Random(ness)</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="https://jasoncwilley.github.io/jajb//jekyll_install-post" rel="bookmark" title="Installing Jekyll">Installing Jekyll</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2016-10-25T00:00:00-04:00">October 25, 2016</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~3 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <h2 id="installing-jekyll-30">Installing Jekyll 3.0+</h2>
+
+<p>Over the past few months I have spent countless hours scouring the web for tutorials that will help solidify my web develoment skills. The internet offers many free tutorials on just about every topic you can think.  After a few hours of searching and start or restarting variuos tutorials I figured out that not all web tutorials are created equal.  In light of this I thought I’d take the time to create a few up to date (As of 10/15/2016) tutorials that may help other web development students steer clear of google rabbit holes and stackoverflow loops.</p>
+
+<p>Before I start (and before you comment) I’d like to say that like anything else in life there are many ways to reach any desired end and that I am going to focus on what worked for me. If you choose to provide constructive criticism please take the time to explain why your way worked better for you so we all can learn.</p>
+
+<p>OK, let’s get started.</p>
+
+<h2 id="jekyll-dependencies">Jekyll Dependencies</h2>
+
+<p>If you wanna create a simplistic but powerful blog like this one the first thing you are are going to have to do is make sure you have the tools to do the job.</p>
+
+<ul>
+  <li>Ruby (including development headers, v1.9.3+ for Jekyll 2 and v2+ for Jekyll 3)</li>
+  <li>RubyGems</li>
+  <li>NodeJS</li>
+  <li>Python 2.7 (for Jekyll 2 and earlier) or Python 3+ for Jekyll 3+)</li>
+</ul>
+
+<p>First you will need to check and see if you have Ruby installed. Open your terminal and run.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>userone@laptop:~/Desktop/$ ruby -v
+ruby 2.3.0p0 (2015-12-25) [x86_64-linux]
+
+</code></pre></div></div>
+<p>If it returns something simular then you are all good and can proceed to the next dependency. If you need to install ruby and want to install version 2.3.1 enter the following commands into the terminal</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev.
+
+cd
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
+
+echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' &gt;&gt; ~/.bashrc
+
+exec $SHELL
+
+rbenv install 2.3.1
+
+rbenv global 2.3.1
+
+ruby -v
+</code></pre></div></div>
+
+<p>The last step is to install the gems bundler.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+If all went well you should have both ruby and rubygems installed. Next check and see if you have Nodejs installed
+
+</code></pre></div></div>
+<p>userone@laptop:~/Desktop/$ nodejs –version
+v6.9.2</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If it returns something like ruby 4.6.1 then you are all good and can proceed to the next dependency on the list. If you need to install nodejs 4.6.1 enter the following commands into the terminal.
+
+</code></pre></div></div>
+<p>sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+nodejs -v</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Now run the following command to make sure it installed correctly.
+
+</code></pre></div></div>
+<p>userone@laptop:~/Desktop/$ nodejs –version
+v6.9.2</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If it returns the version you installed move on to last dependency.
+
+The final dependecy is Python and since it comes pre-installed on all Ubuntu 14.04 systems. Check and make sure your have a working version by running the following command.
+
+</code></pre></div></div>
+<p>userone@laptop:~/Desktop$ python
+Python 3.4.3 (default, Nov 17 2016, 01:08:31)
+[GCC 4.8.4] on linux
+Type “help”, “copyright”, “credits” or “license” for more information.</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+
+      <p>```</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>You should have all the dependencies installed and be able to install Jekyll without any errors.</p>
+
+<h2 id="install-jekyll">Install Jekyll</h2>
+
+<p>Simply run the following command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>userone@laptop:~/Desktop$ gem install bundler jekyll
+</code></pre></div></div>
+
+<p>Now that Jekyll is installed you can start a new project by running the following command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>userone@laptop:~/Desktop$ jekyll new "name of your project without "" "
+userone@laptop:~/Desktop$ cd "name of project"
+userone@laptop:~/Desktop$ bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>Now head over to <a href="http://jekyllrb.com/docs/installation/">Jekyll’s Documentation page</a> and familiarize yourself with the program. This will be the starting point in the next entry of this the tutorial. Thanks again for following along and if you have questions or comments feel free to leave a comment.</p>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//jajb.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="https://jasoncwilley.github.io/jajb//tags/#jekyll" title="Pages tagged jekyll" class="tag"><span class="term">jekyll</span></a><a href="https://jasoncwilley.github.io/jajb//tags/#install" title="Pages tagged install" class="tag"><span class="term">install</span></a><a href="https://jasoncwilley.github.io/jajb//tags/#tutorial" title="Pages tagged tutorial" class="tag"><span class="term">tutorial</span></a><a href="https://jasoncwilley.github.io/jajb//tags/#ruby" title="Pages tagged ruby" class="tag"><span class="term">ruby</span></a><a href="https://jasoncwilley.github.io/jajb//tags/#gem" title="Pages tagged gem" class="tag"><span class="term">gem</span></a><a href="https://jasoncwilley.github.io/jajb//tags/#bundle" title="Pages tagged bundle" class="tag"><span class="term">bundle</span></a></span>
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://jasoncwilley.github.io/jajb//jekyll_install-post" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https://jasoncwilley.github.io/jajb//jekyll_install-post" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=https://jasoncwilley.github.io/jajb//jekyll_install-post" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="https://jasoncwilley.github.io/jajb//background-image" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="https://jasoncwilley.github.io/jajb//how-to-install-virtualenv-on-arch" title="How to install virtualenv on ArchLinux">How to install virtualenv on ArchLinux</a></h3>
+      <p>Installing virtualenv and it's dependencies on ArchLinux. <a href="https://jasoncwilley.github.io/jajb//how-to-install-virtualenv-on-arch">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="https://jasoncwilley.github.io/jajb//uploaded-some-pics" title="Some Pics From My Travels">Some Pics From My Travels</a></h4>
+        <span>Published on March 01, 2018</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="https://jasoncwilley.github.io/jajb//conky-install-and-config-post" title="Conky Setup">Conky Setup</a></h4>
+        <span>Published on February 14, 2018</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2018 Jay Willey. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://jasoncwilley.github.io/jajb//assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://jasoncwilley.github.io/jajb//assets/js/scripts.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'jajb.disqus.com'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</body>
+<script src="https://jasoncwilley.github.io/jajb/assets/js/scripts.min.js"></script>
+<script src="https://jasoncwilley.github.io/jajb/assets/js/respond.js"></script>
+<script src="https://jasoncwilley.github.io/jajb/assets/js/plugins/jquery.dlmenu.js"></script>
+<script src="https://jasoncwilley.github.io/jajb/ssets/js/plugins/jquery.fitvids.js"></script>
+<script src="https://jasoncwilley.github.io/jajb/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="https://jasoncwilley.github.io/jajb/assets/js/vendor/jquery-1.9.1.min.js"></script>
+
+</html>
